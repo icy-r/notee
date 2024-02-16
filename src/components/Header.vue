@@ -112,25 +112,7 @@ nav ul li a:hover {
         color: #f0f0f0;
     }
 
-    nav ul li a:active {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:visited {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:link {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:focus {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:target {
-        color: #f0f0f0;
-    }    
+   
 }
 
 @media screen and (max-width: 400px)
@@ -168,26 +150,6 @@ nav ul li a:hover {
     }
 
     nav ul li a:hover {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:active {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:visited {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:link {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:focus {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:target {
         color: #f0f0f0;
     }
 
@@ -231,28 +193,6 @@ nav ul li a:hover {
     nav ul li a:hover {
         color: #f0f0f0;
     }
-
-    nav ul li a:active {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:visited {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:link {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:focus {
-        color: #f0f0f0;
-    }
-
-    nav ul li a:target {
-        color: #f0f0f0;
-    }
-
-    
 }
 
 </style>
