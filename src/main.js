@@ -1,11 +1,9 @@
-import { createApp } from "vue";
-import router from "./router";
-import App from "./App.vue";
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+import VueSpeedInsights from 'vue-speed-insights';
 
-import { inject } from '@vercel/analytics';
- 
-inject();
-
-const app = createApp(App);
-app.use(router);
-app.mount("#app");
+createApp(App)
+    .use(router)
+    .use(VueSpeedInsights)
+    .mount('#app');
