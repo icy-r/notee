@@ -69,7 +69,7 @@
                 <p>Lecturer Name: Mr. hasindu Dahanayake</p>
                 <p>Time(online): 03:30pm</p>
                 <p>Link:
-                    <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDQ2M2I2NTAtYjg1OC00YzlhLWFiN2QtOTQ5MmU1Yjk4NWM0%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%22f8d4a0be-1d4f-437f-9c22-2e8af4e21e6d%22%7d" target="_blank" @click.prevent="showAlert">Here</a>
+                    <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDQ2M2I2NTAtYjg1OC00YzlhLWFiN2QtOTQ5MmU1Yjk4NWM0%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%22f8d4a0be-1d4f-437f-9c22-2e8af4e21e6d%22%7d" target="_blank">Here</a>
                 </p>
             </div>
         </div>
@@ -92,7 +92,7 @@
 
 <script>
 
-import Swal from 'sweetalert2';
+// import Swal from 'sweetalert2';
 import AppHeader from '@/components/Header.vue';
 import AppFooter from '@/components/Footer.vue';
 
@@ -103,13 +103,13 @@ export default {
         AppFooter,
     },
     methods: {
-        showAlert() {
-            Swal.fire({
-                title: 'Link will be updated soon',
-                icon: 'info',
-                confirmButtonText: 'OK'
-            });
-        }
+        // showAlert() {
+        //     Swal.fire({
+        //         title: 'Link will be updated soon',
+        //         icon: 'info',
+        //         confirmButtonText: 'OK'
+        //     });
+        // }
     }
 }
 </script>
