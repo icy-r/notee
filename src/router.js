@@ -26,16 +26,16 @@ const router = createRouter({
     routes
 })
 
-router.beforeEach((to, from, next) => {
-    console.log('Navigating from', from.fullPath, 'to', to.fullPath);
-    // Check if the destination route exists
-    if (to.name === null) {
-        console.error(`Failed to navigate: route ${to.fullPath} does not exist.`);
-        next(false); // Cancel navigation
-    } else {
-        next();
-    }
-});
+// router.beforeEach((to, from, next) => {
+//     console.log('Navigating from', from.fullPath, 'to', to.fullPath);
+//     // Check if the destination route exists
+//     if (to.name === null) {
+//         console.error(`Failed to navigate: route ${to.fullPath} does not exist.`);
+//         next(false); // Cancel navigation
+//     } else {
+//         next();
+//     }
+// });
 
 router.onError((error) => {
     console.error('Failed to navigate:', error);
