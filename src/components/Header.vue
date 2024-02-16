@@ -74,6 +74,187 @@ nav ul li a {
 nav ul li a:hover {
     color: #f0f0f0;
 }
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sitename {
+        font-size: 30px;
+    }
+
+    nav {
+        margin-top:16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li a:hover {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:active {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:visited {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:link {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:focus {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:target {
+        color: #f0f0f0;
+    }    
+}
+
+@media screen and (max-width: 400px)
+{
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sitename {
+        font-size: 30px;
+    }
+
+    nav {
+        margin-top:16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li a:hover {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:active {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:visited {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:link {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:focus {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:target {
+        color: #f0f0f0;
+    }
+
+    
+}
+
+@media screen and (max-width: 300px)
+{
+    header {
+        flex-direction: column;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .sitename {
+        font-size: 30px;
+    }
+
+    nav {
+        margin-top:16px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    nav ul li a:hover {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:active {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:visited {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:link {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:focus {
+        color: #f0f0f0;
+    }
+
+    nav ul li a:target {
+        color: #f0f0f0;
+    }
+
+    
+}
+
 </style>
 
 
