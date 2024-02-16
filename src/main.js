@@ -1,13 +1,17 @@
 import { createApp } from "vue";
 import router from "./router";
 import App from "./App.vue";
-// import { SpeedInsights } from "@vercel/speed-insights/vue"
 import { inject } from '@vercel/analytics';
 import analytic from './firebase';
 
+inject();
+
+import { logEvent } from "firebase/analytics";
+
 router.afterEach((to) => {
+    console.log('Before logEvent');
     try {
-        analytic.logEvent('page_view', {
+        logEvent(analytic, 'page_view', {
             page_path: to.path,
             page_location: window.location.href,
             page_title: to.name,
@@ -16,11 +20,9 @@ router.afterEach((to) => {
     } catch (error) {
         console.log('Error calling logEvent:', error);
     }
+    console.log('After logEvent');
 });
 
 const app = createApp(App);
 app.use(router);
-// app.use(SpeedInsights);
 app.mount("#app");
-
-inject();
