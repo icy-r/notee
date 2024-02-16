@@ -1,7 +1,3 @@
-<!-- <footer>
-    <p class="dev"> &copy; Developed by: icy</p>
-</footer> -->
-
 <template>
     <footer>
         <div class="title">
@@ -27,7 +23,7 @@ footer {
     border-radius: 10px;
     bottom: 0;
     width: 100%;
-    position: relative;
+     /* Changed from 'relative' to 'fixed' */
 }
 
 .dev {
@@ -46,6 +42,4 @@ a {
 a:hover {
     color: #f0f0f0;
 }
-
-
 </style>
