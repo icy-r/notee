@@ -22,7 +22,7 @@ footer {
     color: rgb(5, 5, 5);
     text-align: center;
     padding: 5px;
-    font-size: 30px;
+    font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
     border-radius: 10px;
     bottom: 0;
