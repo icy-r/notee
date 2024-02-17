@@ -9,18 +9,18 @@ inject();
 import { logEvent } from "firebase/analytics";
 
 router.afterEach((to) => {
-    console.log('Before logEvent');
+    // console.log('Before logEvent');
     try {
         logEvent(analytic, 'page_view', {
             page_path: to.path,
             page_location: window.location.href,
             page_title: to.name,
         });
-        console.log('logEvent called successfully');
+        // console.log('logEvent called successfully');
     } catch (error) {
         console.log('Error calling logEvent:', error);
     }
-    console.log('After logEvent');
+    // console.log('After logEvent');
 });
 
 const app = createApp(App);
