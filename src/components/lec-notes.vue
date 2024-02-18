@@ -84,7 +84,7 @@ lectureDivs.forEach(lectureDiv => {
   align-self: center;
   margin-top: 12px;
   width: 100%;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   padding: 16px;
 }
 @media (max-width: 991px) {
