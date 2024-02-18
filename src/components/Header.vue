@@ -120,7 +120,7 @@
     background-color: #f0f2f5;
     border-radius: 12px;
     padding: 2px 10px;
-    margin: 10px 0;
+    margin: 10px 10px;
     width: 100%;
   }
   
