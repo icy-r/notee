@@ -1,220 +1,214 @@
 <template>
-    <header>
-        <div class="logo">
-            <img src="../assets/download.jpg" alt="logo">
-            <p class="sitename">Notee</p>
-        </div>
-        <nav>
-            <ul>
-                <li><router-link to="/">Home</router-link></li>
-                <li><router-link to="/lecture-details">Lecture-details</router-link></li>
-                <li><router-link to="/timetable">Timetable</router-link></li>
+    <header class="site-header">
+        <section class="brand-search-container">
+            <div class="logo-name-container">
+                <img loading="lazy" src="../assets/logo.png" alt="UniConnect logo" class="brand-logo" />
+                <h1 class="brand-name">Notee</h1>
+            </div>
+            <form class="search-form" @submit.prevent="handleSearch">
+                <label for="searchInput" class="visually-hidden">Search</label>
+                <input class="search-input" type="search" id="searchInput" placeholder="Search" aria-label="Search"
+                    v-model="searchQuery" />
+                <button class="search-button" type="submit">
+                    <img loading="lazy"
+                        src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4b85695d4774e21b2c0d2a766bca0f7d9b4333f2ab8e27a807d1061aa941f60?apiKey=82f83280471648fbb704a7686cae1d7e"
+                        alt="Search" class="search-icon" />
+                </button>
+            </form>
+        </section>
+        <nav class="site-navigation">
+            <ul class="nav-links">
+                <li v-for="link in navLinks" :key="link.name">
+                    <button @click="navigate(link.href)" class="nav-link">
+                        {{ link.name }}
+                    </button>
+                </li>
             </ul>
+            <!-- <div class="action-buttons">
+          <button class="create-button" @click="handleCreate">Create</button>
+          <button class="profile-button" @click="handleProfileClick">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/df7ca25d0c4e23cfedbbb0f3999b90016f9d8b557d020f519abbf0feb3178ec1?apiKey=82f83280471648fbb704a7686cae1d7e"
+              alt="Profile"
+              class="profile-icon"
+            />
+          </button>
+        </div> -->
         </nav>
     </header>
-    <router-view/>
 </template>
-
+  
 <script>
+import Swal from 'sweetalert2';
+
 export default {
-    name: 'AppHeader',
-}
+    name: "AppHeader",
+    data() {
+        return {
+            navLinks: [
+                { name: "Home", href: "/" },
+                { name: "Lecture", href: "/lecture-details" },
+                { name: "TimeTable", href: "timetable" },
+                // { name: "Groups", href: "#" },
+                // { name: "Explore", href: "#" },
+            ],
+            searchQuery: "",
+        };
+    },
+    mounted() {
+        const search = document.querySelectorAll(".search-button");
+        search.forEach((button) => {
+            button.addEventListener("click", () => {
+                Swal.fire({
+                    title: "Search",
+                    text: `Searching function is in development.`,
+                    icon: "info",
+                    confirmButtonText: "OK"
+                });
+            });
+        });
+    },
+    methods: {
+        handleSearch() {
+            // alert(`Searching for: ${this.searchQuery}`);
+        },
+        navigate(href) {
+            window.location.href = href;
+        },
+        handleProfileClick() {
+            alert("Profile Clicked");
+        },
+    },
+};
 </script>
 
-<style type="text/css" scoped>
-    header {
-    background-color: #c1d3c2;
-    color: rgb(5, 5, 5);
-    text-align: center;
-    padding: 5px;
-    font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 10px;
-    margin-bottom: 20px;
+
+
+<style scoped>
+.site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 1px solid #e5e8eb;
 }
 
-.logo {
+@media (max-width: 991px) {
+    .site-header {
+        padding: 0 20px;
+    }
+}
+
+.brand-search-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-name-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.brand-logo {
+    width: 3rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.brand-name {
+    font-size: 18px;
+    color: #121417;
+    font-weight: 700;
+    margin: auto;
+    font-family: Lexend, sans-serif;
+}
+
+.search-form {
+    display: flex;
+    background-color: #f0f2f5;
+    border-radius: 12px;
+    padding: 2px 10px;
+    margin: auto auto auto 20px;
+    /* Adjusted margin */
+}
+
+.search-input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    color: #61788a;
+    font-size: 16px;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    padding: 0;
     display: flex;
     align-items: center;
 }
 
-.logo img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.search-icon {
+    width: 24px;
+    aspect-ratio: 1;
 }
 
-.sitename {
-    font-size: 50px;
-    margin: 0;
-}
-
-nav {
-    background-color: #c1d3c2;
-    color: rgb(5, 5, 5);
-    text-align: center;
-    padding: 5px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 10px;
-}
-
-nav ul {
-    list-style: none;
+.site-navigation {
     display: flex;
-    justify-content: space-around;
-    padding: 0;
+    justify-content: space-between;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: rgb(5, 5, 5);
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding: auto;
+    list-style: none;
 }
 
-nav ul li a:hover {
-    color: #f0f0f0;
+.nav-link {
+    background: none;
+    border: none;
+    color: #121417;
+    font-size: 14px;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
-    header {
-        flex-direction: column;
-    }
-    .logo {
-        margin-bottom: 20px;
-    }
-
-    .logo img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .sitename {
-        font-size: 30px;
-    }
-
-    nav {
-        margin-top:16px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    nav ul li a:hover {
-        color: #f0f0f0;
-    }
-
-   
+.action-buttons {
+    display: flex;
+    gap: 10px;
+    padding: auto;
+    margin: auto;
 }
 
-@media screen and (max-width: 400px)
-{
-    header {
-        flex-direction: column;
-    }
-    .logo {
-        margin-bottom: 20px;
-    }
-
-    .logo img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .sitename {
-        font-size: 30px;
-    }
-
-    nav {
-        margin-top:16px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    nav ul li a:hover {
-        color: #f0f0f0;
-    }
-
-    
+.create-button,
+.profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin: 0;
+    /* Adjusted margin */
+    padding: 10px;
+    background-color: #1c91f2;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
 }
 
-@media screen and (max-width: 300px)
-{
-    header {
-        flex-direction: column;
-    }
-    .logo {
-        margin-bottom: 20px;
-    }
-
-    .logo img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .sitename {
-        font-size: 30px;
-    }
-
-    nav {
-        margin-top:16px;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    nav ul li a:hover {
-        color: #f0f0f0;
-    }
+.profile-icon {
+    width: 40px;
+    aspect-ratio: 1;
 }
 
-</style>
-
-
-
-
-
-
-
-
-
-<!-- <header>
-            <div class="logo">
-                <img src="../assets/download.jpg" alt="logo">
-                <p class="sitename">Notee</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><router-link to="/">Home</router-link></li>
-                    <li><router-link to="/lecture-details">Lecture-details</router-link></li>
-                    <li><router-link to="/timetable">Timetable</router-link></li>
-                </ul>
-            </nav>
-        </header> -->
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}</style>

@@ -14,13 +14,13 @@ export default {
 
 <style type="text/css" scoped>
 footer {
-    background-color: #c1d3c2;
+    background-color: #ffffff;
     color: rgb(5, 5, 5);
     text-align: center;
-    padding: 5px;
+    padding: auto;
     font-size: 10px;
     font-family: 'Times New Roman', Times, serif;
-    border-radius: 10px;
+    border-radius: 6px;
     bottom: 0;
     width: 100%;
      /* Changed from 'relative' to 'fixed' */

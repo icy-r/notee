@@ -1,47 +1,34 @@
 <template>
     <AppHeader />
-
     <div class="container">
-        
-        <main class="content">
+        <div class="content">
             <transition name="fade">
-                <div class="notices animate" v-if="showNotice">
-                    <router-link to="/timetable">
-                        <h3>
-                            Timetable is updated!
-                        </h3>
-                    </router-link>
+                <div> 
+                    <NewNotices />
                 </div>
             </transition>
-
-            <transition name="fade">
-                <div class="notices animate" v-if="showNotice">
-                    <router-link to="/lecture-details">
-                        <h3>
-                            Lecture details are updated!
-                        </h3>
-                    </router-link>
-                </div>
-            </transition>
-
-            <!-- stay with us for more updates -->
-            <img :src="logo" class="remove-background" alt="logo" width="100%" height="auto" />
-
-        </main>
-
-        <AppFooter />
+        </div>
     </div>
+    <div>
+        <lecNotes />
+    </div>
+
+    <AppFooter />
 </template>
 
 <script>
 import logo from '@/assets/logo.jpg';
 import AppHeader from '@/components/Header.vue';
+import NewNotices from '@/components/new-notices.vue';
+import lecNotes from '@/components/lec-notes.vue';
 import AppFooter from '@/components/Footer.vue';
 
 export default {
     name: 'HomePage',
     components: {
         AppHeader,
+        NewNotices,
+        lecNotes,
         AppFooter,
     },
     data() {
@@ -57,10 +44,11 @@ export default {
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-color: #f5f5f5;
     padding: 20px;
+    width:auto;
 }
 
 .content {

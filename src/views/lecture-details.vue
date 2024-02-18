@@ -1,98 +1,39 @@
 <template>
     <AppHeader />
-
-    <div class="one-line-running-notification-infinit">
-        <h3>
-            <span></span>
-
-        </h3>
-    </div>
-
-    <main>
-
-        <!-- <div class="new-time-table">
-            <div class="tile-header">
-                <h1>New Time Table</h1>
+    <div class="div">
+        <div class="div-12">
+            <div class="div-13">
+                <div class="div-14">Course</div>
+                <div class="div-15">/</div>
             </div>
-            <div class="tile-content">
-                <p>View: <a href="/source/timetable.html">Here (version 3) </a>
-                </p>
+            <div class="div-16">IT/SE</div>
+        </div>
+        <div class="div-17">IT/SE: Information Technology</div>
+        <div class="div-18 scheduled-lec">Scheduled Lectures</div>
+        <div class="div-19" v-for="lecture in lectures" :key="lecture.id">
+            <div class="div-20">
+                <div class="div-21">
+                    <img :src="lecture.imageUrl" class="img-5" loading="lazy" />
                 </div>
-        </div> -->
-
-        <div class="dms tile">
-            <div class="tile-header">
-                <h1>Database Management System</h1>
+                <div class="div-22">
+                    <div class="div-23">{{ lecture.title }}</div>
+                    <div class="div-24">
+                        Lecture {{ lecture.id }}<br />
+                        Professor: {{ lecture.professor }}<br />
+                        Time: {{ lecture.time }}<br />
+                        Date: {{ lecture.date }}
+                    </div>
+                </div>
             </div>
-            <div class="tile-content">
-                <p>Lecturer Name: </p>
-                <p>Time(online): 8:30am</p>
-                <p>Link: <a
-                        href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_Mzk1ZWZjZGQtNmRmYy00MGY3LTkzZmItNTA3NjUwMDk4ODYy%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%22d17ac732-3418-450f-a630-2de89063fe63%22%7d" target="_blank">Here</a>
-                </p>
-            </div>
-        </div>
-
-
-        <div class="ossa tile">
-            <div class="tile-header">
-                <h1>Operating System and System Administration</h1>
-            </div>
-            <div class="tile-content">
-                <p>Lecturer Name: Mrs. Sanvitha Kasthuriarachchi</p>
-                <p>Time(online): 10:30am</p>
-                <p>Link: <a
-                        href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmNjYTZkYmItOTk3MC00NWExLWIzNjgtZjI0YjI1MTMwODdj%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%22eb8117cf-b003-451d-beb6-1e0926cc38e3%22%7d" target="_blank">Here</a>
-                </p>
+            <div class="div-25">
+                <a :href="lecture.link" class="div-26" target="_blank">Join</a>
             </div>
         </div>
-
-        <div class="se tile">
-            <div class="tile-header">
-                <h1>Software Engineering</h1>
-            </div>
-            <div class="tile-content">
-                <p>Lecturer Name: Mrs. Uthpala Samarakoon</p>
-                <p>Time(online): 01:30pm</p>
-                <p>Link: <a
-                        href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQxMzliNmEtZGJmZi00NzBkLWI1YjItNDlkYWEyNmQ2ZWMy%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%224a3d27ca-4f3c-4d48-94e9-5bb387fab477%22%7d" target="_blank">Here</a>
-                </p>
-            </div>
-        </div>
-
-
-        <div class="oop tile">
-            <div class="tile-header">
-                <h1>Object Oriented Programming</h1>
-            </div>
-            <div class="tile-content">
-                <p>Lecturer Name: Mr. hasindu Dahanayake</p>
-                <p>Time(online): 03:30pm</p>
-                <p>Link:
-                    <a href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDQ2M2I2NTAtYjg1OC00YzlhLWFiN2QtOTQ5MmU1Yjk4NWM0%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%22f8d4a0be-1d4f-437f-9c22-2e8af4e21e6d%22%7d" target="_blank">Here</a>
-                </p>
-            </div>
-        </div>
-
-        <!-- <div class="cn tile">
-            <div class="tile-header">
-                <h1>Computer Networks</h1>
-            </div>
-            <div class="tile-content">
-                <p>Lecturer Name: </p>
-                <p>Time(online): </p>
-                <p>Link: <a href="">Here</a>
-                </p>
-            </div>
-        </div> -->
-    </main>
+    </div>
     <AppFooter />
-    
 </template>
 
 <script>
-
-// import Swal from 'sweetalert2';
 import AppHeader from '@/components/Header.vue';
 import AppFooter from '@/components/Footer.vue';
 
@@ -102,103 +43,934 @@ export default {
         AppHeader,
         AppFooter,
     },
-    methods: {
-        // showAlert() {
-        //     Swal.fire({
-        //         title: 'Link will be updated soon',
-        //         icon: 'info',
-        //         confirmButtonText: 'OK'
-        //     });
-        // }
-    }
-}
+    data() {
+        return {
+            lectures: [
+                {
+                    id: 1,
+                    title: 'Database Management System',
+                    professor: '.......',
+                    time: '8:30am',
+                    date: '2023-02-23',
+                    imageUrl: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0256debb5de7c2fef6964f587a8f67a13485ecfc7e246d0612a25695f746b8b3?apiKey=82f83280471648fbb704a7686cae1d7e',
+                    link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_Mzk1ZWZjZGQtNmRmYy00MGY3LTkzZmItNTA3NjUwMDk4ODYy%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%22d17ac732-3418-450f-a630-2de89063fe63%22%7d',
+                },
+                {
+                    id: 2,
+                    title: 'Operating System and System administration',
+                    professor: 'Mrs. Sanvitha kasthuriarachchi',
+                    time: '10:30am',
+                    date: '2023-02-23',
+                    imageUrl: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0256debb5de7c2fef6964f587a8f67a13485ecfc7e246d0612a25695f746b8b3?apiKey=82f83280471648fbb704a7686cae1d7e',
+                    link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmNjYTZkYmItOTk3MC00NWExLWIzNjgtZjI0YjI1MTMwODdj%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%22eb8117cf-b003-451d-beb6-1e0926cc38e3%22%7d',
+                },
+                {
+                    id: 3,
+                    title: 'Software Engineering',
+                    professor: 'Mrs. Uthpala Samarakoon',
+                    time: '1:30pm',
+                    date: '2023-02-23',
+                    imageUrl: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0256debb5de7c2fef6964f587a8f67a13485ecfc7e246d0612a25695f746b8b3?apiKey=82f83280471648fbb704a7686cae1d7e',
+                    link: 'href="https://teams.microsoft.com/l/meetup-join/19%3ameeting_MzQxMzliNmEtZGJmZi00NzBkLWI1YjItNDlkYWEyNmQ2ZWMy%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%224a3d27ca-4f3c-4d48-94e9-5bb387fab477%22%7d',
+                },
+                {
+                    id: 4,
+                    title: 'Object Oriented Programming',
+                    professor: 'Mr. Hasindu Dahanayake',
+                    time: '3:30pm',
+                    date: '2023-02-23',
+                    imageUrl: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0256debb5de7c2fef6964f587a8f67a13485ecfc7e246d0612a25695f746b8b3?apiKey=82f83280471648fbb704a7686cae1d7e',
+                    link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDQ2M2I2NTAtYjg1OC00YzlhLWFiN2QtOTQ5MmU1Yjk4NWM0%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%22f8d4a0be-1d4f-437f-9c22-2e8af4e21e6d%22%7d',
+                }
+            ],
+        };
+    },
+};
 </script>
+  
+<style scoped>
 
-<style type="text/css" scoped>
-
-
-main {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.tile {
-    background-color: #c1d3c2;
-    color: rgb(5, 5, 5);
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 10px;
-    width: calc(50% - 40px);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.tile a {
-    color: rgb(5, 5, 5);
+a {
     text-decoration: none;
+    color: #121417;
 }
-
-.tile a:hover {
-    color: #f0f0f0;
-}
-
-.tile-header h1 {
-    margin: 0;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.one-line-running-notification-infinit h3 {
+.div {
+    align-items: center;
+    background-color: #fff;
     display: flex;
-}
-
-.one-line-running-notification-infinit h3 span {
-    white-space: nowrap;
-    animation: marquee 15s linear infinite;
-}
-
-.one-line-running-notification-infinit h3 span:nth-child(2) {
-    animation-delay: 7.5s;
-}
-
-.new-time-table {
-    background-color: #c1d3c2;
-    color: rgb(5, 5, 5);
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    border-radius: 10px;
-    width: calc(100% - 40px);
-    box-sizing: border-box;
-    display: flex;
+    width: 100%;
+    padding-bottom: 50px;
     flex-direction: column;
+}
+
+@media (max-width: 991px) {
+    .div {
+        max-width: 100%;
+    }
+}
+
+.div-2 {
     justify-content: space-between;
+    border-bottom: 1px solid #e5e8eb;
+    align-self: stretch;
+    display: flex;
+    gap: 0px;
+    padding: 13px 40px;
 }
 
-@media (min-width: 768px) {
-    .tile {
-        width: calc(50% - 40px);
-        font-size: 20px;
+@media (max-width: 991px) {
+    .div-2 {
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding: 0 20px;
     }
 }
 
-@media (max-width: 480px) {
-    .tile {
-        width: calc(100% - 40px);
-        font-size: 14px;
+.div-3 {
+    display: flex;
+    gap: 16px;
+    font-size: 18px;
+    color: #121417;
+    font-weight: 700;
+    white-space: nowrap;
+    letter-spacing: -0.27px;
+    margin: auto 0;
+}
+
+@media (max-width: 991px) {
+    .div-3 {
+        white-space: initial;
     }
 }
-</style>
+
+.div-4 {
+    width: 16px;
+    height: 16px;
+    margin: auto 0;
+}
+
+.div-5 {
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+}
+
+.div-6 {
+    justify-content: space-between;
+    display: flex;
+    padding-left: 80px;
+    gap: 20px;
+}
+
+@media (max-width: 991px) {
+    .div-6 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-7 {
+    justify-content: space-between;
+    border-radius: 12px;
+    background-color: #f0f2f5;
+    display: flex;
+    gap: 12px;
+    font-size: 16px;
+    color: #61788a;
+    font-weight: 400;
+    white-space: nowrap;
+    line-height: 150%;
+    padding: 8px 16px;
+}
+
+@media (max-width: 991px) {
+    .div-7 {
+        white-space: initial;
+    }
+}
+
+.img {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 24px;
+}
+
+.div-8 {
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+    flex-grow: 1;
+}
+
+.div-9 {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.div-10 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #f0f2f5;
+    display: flex;
+    aspect-ratio: 1;
+    width: 40px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.img-2 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+}
+
+.div-11 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #f0f2f5;
+    display: flex;
+    aspect-ratio: 1;
+    width: 40px;
+    height: 40px;
+    padding: 0 10px;
+}
+
+.img-3 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+}
+
+.img-4 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 40px;
+}
+
+.div-12 {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 960px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 150%;
+    padding: 16px;
+}
+
+@media (max-width: 991px) {
+    .div-12 {
+        max-width: 100%;
+        flex-wrap: wrap;
+        white-space: initial;
+    }
+}
+
+.div-13 {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    color: #61788a;
+}
+
+@media (max-width: 991px) {
+    .div-13 {
+        white-space: initial;
+    }
+}
+
+.div-14 {
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+    flex-grow: 1;
+}
+
+.div-15 {
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+}
+
+.div-16 {
+    color: #121417;
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+@media (max-width: 991px) {
+    .div-16 {
+        max-width: 100%;
+    }
+}
+
+.div-17 {
+    font-feature-settings: "dlig" on;
+    align-items: start;
+    width: 960px;
+    max-width: 100%;
+    justify-content: center;
+    color: #121417;
+    letter-spacing: -0.8px;
+    padding: 16px 60px 16px 16px;
+    font: 700 32px Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-17 {
+        max-width: 100%;
+        padding-right: 20px;
+    }
+}
+
+.div-18 {
+    color: #121417;
+    font-feature-settings: "dlig" on;
+    letter-spacing: -0.27px;
+    align-self: start;
+    white-space: nowrap;
+    margin: 16px 0 0 176px;
+    font: 700 18px Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-18 {
+        margin-left: 10px;
+        white-space: initial;
+    }
+}
+
+.div-19 {
+    justify-content: space-between;
+    background-color: #fff;
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 960px;
+    gap: 20px;
+    padding: 12px 16px;
+}
+
+@media (max-width: 991px) {
+    .div-19 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-20 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+@media (max-width: 991px) {
+    .div-20 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-21 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f0f2f5;
+    display: flex;
+    aspect-ratio: 1;
+    width: 48px;
+    height: 48px;
+    padding: 0 12px;
+}
+
+.img-5 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+}
+
+.div-22 {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+}
+
+@media (max-width: 991px) {
+    .div-22 {
+        max-width: 100%;
+    }
+}
+
+.div-23 {
+    color: #121417;
+    font-feature-settings: "dlig" on;
+    font: 500 16px/150% Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-23 {
+        max-width: 100%;
+    }
+}
+
+.div-24 {
+    color: #61788a;
+    font-feature-settings: "dlig" on;
+    font: 400 14px/21px Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-24 {
+        max-width: 100%;
+    }
+}
+
+.div-25 {
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #f0f2f5;
+    align-self: start;
+    display: flex;
+    flex-basis: 0%;
+    flex-direction: column;
+    font-size: 14px;
+    color: #121417;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 150%;
+    padding: 6px 27px;
+}
+
+@media (max-width: 991px) {
+    .div-25 {
+        white-space: initial;
+        padding: 0 20px;
+    }
+}
+
+.div-26 {
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+    background-color: #f0f2f5;
+    aspect-ratio: 1.43;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .div-26 {
+        white-space: initial;
+    }
+}
+
+.div-27 {
+    justify-content: space-between;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    gap: 20px;
+    padding: 12px 16px;
+}
+
+@media (max-width: 991px) {
+    .div-27 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-28 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+@media (max-width: 991px) {
+    .div-28 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-29 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f0f2f5;
+    display: flex;
+    aspect-ratio: 1;
+    width: 48px;
+    height: 48px;
+    padding: 0 12px;
+}
+
+.img-6 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+}
+
+.div-30 {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+}
+
+@media (max-width: 991px) {
+    .div-30 {
+        max-width: 100%;
+    }
+}
+
+.div-31 {
+    color: #121417;
+    font-feature-settings: "dlig" on;
+    font: 500 16px/150% Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-31 {
+        max-width: 100%;
+    }
+}
+
+.div-32 {
+    color: #61788a;
+    font-feature-settings: "dlig" on;
+    font: 400 14px/21px Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-32 {
+        max-width: 100%;
+    }
+}
+
+.div-33 {
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #f0f2f5;
+    align-self: start;
+    display: flex;
+    flex-basis: 0%;
+    flex-direction: column;
+    font-size: 14px;
+    color: #121417;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 150%;
+    padding: 6px 27px;
+}
+
+@media (max-width: 991px) {
+    .div-33 {
+        white-space: initial;
+        padding: 0 20px;
+    }
+}
+
+.div-34 {
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+    background-color: #f0f2f5;
+    aspect-ratio: 1.43;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .div-34 {
+        white-space: initial;
+    }
+}
+
+.div-35 {
+    justify-content: space-between;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    gap: 20px;
+    padding: 12px 16px;
+}
+
+@media (max-width: 991px) {
+    .div-35 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-36 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+@media (max-width: 991px) {
+    .div-36 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-37 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f0f2f5;
+    display: flex;
+    aspect-ratio: 1;
+    width: 48px;
+    height: 48px;
+    padding: 0 12px;
+}
+
+.img-7 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+}
+
+.div-38 {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+}
+
+@media (max-width: 991px) {
+    .div-38 {
+        max-width: 100%;
+    }
+}
+
+.div-39 {
+    color: #121417;
+    font-feature-settings: "dlig" on;
+    font: 500 16px/150% Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-39 {
+        max-width: 100%;
+    }
+}
+
+.div-40 {
+    color: #61788a;
+    font-feature-settings: "dlig" on;
+    font: 400 14px/21px Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-40 {
+        max-width: 100%;
+    }
+}
+
+.div-41 {
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #f0f2f5;
+    align-self: start;
+    display: flex;
+    flex-basis: 0%;
+    flex-direction: column;
+    font-size: 14px;
+    color: #121417;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 150%;
+    padding: 6px 27px;
+}
+
+@media (max-width: 991px) {
+    .div-41 {
+        white-space: initial;
+        padding: 0 20px;
+    }
+}
+
+.div-42 {
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+    background-color: #f0f2f5;
+    aspect-ratio: 1.43;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .div-42 {
+        white-space: initial;
+    }
+}
+
+.div-43 {
+    justify-content: space-between;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    gap: 20px;
+    padding: 12px 16px;
+}
+
+@media (max-width: 991px) {
+    .div-43 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-44 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+@media (max-width: 991px) {
+    .div-44 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-45 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f0f2f5;
+    display: flex;
+    aspect-ratio: 1;
+    width: 48px;
+    height: 48px;
+    padding: 0 12px;
+}
+
+.img-8 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+}
+
+.div-46 {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+}
+
+@media (max-width: 991px) {
+    .div-46 {
+        max-width: 100%;
+    }
+}
+
+.div-47 {
+    color: #121417;
+    font-feature-settings: "dlig" on;
+    font: 500 16px/150% Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-47 {
+        max-width: 100%;
+    }
+}
+
+.div-48 {
+    color: #61788a;
+    font-feature-settings: "dlig" on;
+    font: 400 14px/21px Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-48 {
+        max-width: 100%;
+    }
+}
+
+.div-49 {
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #f0f2f5;
+    align-self: start;
+    display: flex;
+    flex-basis: 0%;
+    flex-direction: column;
+    font-size: 14px;
+    color: #121417;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 150%;
+    padding: 6px 27px;
+}
+
+@media (max-width: 991px) {
+    .div-49 {
+        white-space: initial;
+        padding: 0 20px;
+    }
+}
+
+.div-50 {
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+    background-color: #f0f2f5;
+    aspect-ratio: 1.43;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .div-50 {
+        white-space: initial;
+    }
+}
+
+.div-51 {
+    justify-content: space-between;
+    background-color: #fff;
+    display: flex;
+    margin-bottom: 94px;
+    width: 100%;
+    max-width: 960px;
+    gap: 20px;
+    padding: 12px 16px;
+}
+
+@media (max-width: 991px) {
+    .div-51 {
+        max-width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    }
+}
+
+.div-52 {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+@media (max-width: 991px) {
+    .div-52 {
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+.div-53 {
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #f0f2f5;
+    display: flex;
+    aspect-ratio: 1;
+    width: 48px;
+    height: 48px;
+    padding: 0 12px;
+}
+
+.img-9 {
+    aspect-ratio: 1;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+}
+
+.div-54 {
+    justify-content: center;
+    align-self: start;
+    display: flex;
+    flex-grow: 1;
+    flex-basis: 0%;
+    flex-direction: column;
+}
+
+@media (max-width: 991px) {
+    .div-54 {
+        max-width: 100%;
+    }
+}
+
+.div-55 {
+    color: #121417;
+    font-feature-settings: "dlig" on;
+    font: 500 16px/150% Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-55 {
+        max-width: 100%;
+    }
+}
+
+.div-56 {
+    color: #61788a;
+    font-feature-settings: "dlig" on;
+    font: 400 14px/21px Lexend, sans-serif;
+}
+
+@media (max-width: 991px) {
+    .div-56 {
+        max-width: 100%;
+    }
+}
+
+.div-57 {
+    justify-content: center;
+    border-radius: 12px;
+    background-color: #f0f2f5;
+    align-self: start;
+    display: flex;
+    flex-basis: 0%;
+    flex-direction: column;
+    font-size: 14px;
+    color: #121417;
+    font-weight: 500;
+    white-space: nowrap;
+    line-height: 150%;
+    padding: 6px 27px;
+}
+
+@media (max-width: 991px) {
+    .div-57 {
+        white-space: initial;
+        padding: 0 20px;
+    }
+}
+
+.div-58 {
+    font-feature-settings: "dlig" on;
+    font-family: Lexend, sans-serif;
+    background-color: #f0f2f5;
+    aspect-ratio: 1.43;
+    justify-content: center;
+}
+
+@media (max-width: 991px) {
+    .div-58 {
+        white-space: initial;
+    }
+}</style>

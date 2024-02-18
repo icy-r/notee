@@ -12,6 +12,7 @@
     "@vercel/speed-insights": "^1.0.10",
     "core-js": "^3.8.3",
     "firebase": "^10.8.0",
+    "mongodb": "^6.3.0",
     "sweetalert2": "^11.10.5",
     "vue": "^3.2.13",
     "vue-analytics": "^5.22.1",
