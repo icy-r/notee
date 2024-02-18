@@ -84,7 +84,7 @@ lectureDivs.forEach(lectureDiv => {
   align-self: center;
   margin-top: 12px;
   width: 100%;
-  max-width: auto;
+  max-width: 900px;
   /* padding: 16px; */
 }
 @media (max-width: 991px) {
@@ -103,12 +103,13 @@ lectureDivs.forEach(lectureDiv => {
     gap: 0px;
   }
 }
-.column {
+.column .column-2 .column-33 .column-4{
   display: flex;
   flex-direction: column;
   line-height: normal;
   width: 25%;
   margin-left: 0px;
+  justify-content: center;
 }
 @media (max-width: 991px) {
   .column {
@@ -149,7 +150,7 @@ lectureDivs.forEach(lectureDiv => {
     white-space: initial;
   }
 }
-.column-2 {
+/* .column-2 {
   display: flex;
   flex-direction: column;
   line-height: normal;
@@ -160,7 +161,7 @@ lectureDivs.forEach(lectureDiv => {
   .column-2 {
     width: 100%;
   }
-}
+} */
 .div-6 {
   display: flex;
   flex-grow: 1;
@@ -189,7 +190,7 @@ lectureDivs.forEach(lectureDiv => {
     white-space: initial;
   }
 }
-.column-3 {
+/* .column-3 {
   display: flex;
   flex-direction: column;
   line-height: normal;
@@ -200,7 +201,7 @@ lectureDivs.forEach(lectureDiv => {
   .column-3 {
     width: 100%;
   }
-}
+} */
 .div-9 {
   display: flex;
   flex-grow: 1;
@@ -229,7 +230,7 @@ lectureDivs.forEach(lectureDiv => {
     white-space: initial;
   }
 }
-.column-4 {
+/* .column-4 {
   display: flex;
   flex-direction: column;
   line-height: normal;
@@ -240,7 +241,7 @@ lectureDivs.forEach(lectureDiv => {
   .column-4 {
     width: 100%;
   }
-}
+} */
 .div-12 {
   display: flex;
   flex-grow: 1;
