@@ -19,7 +19,7 @@
             </div>
         </a>
     </div>
-    <div v-if="notices.length > 3">
+    <div v-if="notices.length > 4">
         <a class="more" href="#" @click.prevent="navigateToMore">More...</a>
     </div>
 </template>
@@ -30,7 +30,13 @@ export default {
     data() {
         return {
             notices: [
-            {
+                {
+                    title: 'Hybrid CN lecture link for group 04',
+                    course: 'For Year 2 semester 1 students',
+                    image: 'https://cdn.builder.io/api/v1/image/assets/TEMP/df7ca25d0c4e23cfedbbb0f3999b90016f9d8b557d020f519abbf0feb3178ec1?apiKey=82f83280471648fbb704a7686cae1d7e',
+                    url: '/lecture-details',
+                },
+                {
                     title: 'This week no SE labs',
                     course: 'For Year 2 semester 1 students',
                     image: 'https://cdn.builder.io/api/v1/image/assets/TEMP/df7ca25d0c4e23cfedbbb0f3999b90016f9d8b557d020f519abbf0feb3178ec1?apiKey=82f83280471648fbb704a7686cae1d7e',
@@ -48,6 +54,7 @@ export default {
                     image: 'https://cdn.builder.io/api/v1/image/assets/TEMP/df7ca25d0c4e23cfedbbb0f3999b90016f9d8b557d020f519abbf0feb3178ec1?apiKey=82f83280471648fbb704a7686cae1d7e',
                     url: '/lecture-details',
                 },
+
                 
                 // {
                 //     title: 'Exam schedule released!',
@@ -60,7 +67,7 @@ export default {
     },
     computed: {
         limitedNotices() {
-            return this.notices.slice(0, 3);
+            return this.notices.slice(0, 4);
         },
     },
     methods: {

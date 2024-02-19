@@ -81,6 +81,15 @@ export default {
                     date: '2023-02-23',
                     imageUrl: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0256debb5de7c2fef6964f587a8f67a13485ecfc7e246d0612a25695f746b8b3?apiKey=82f83280471648fbb704a7686cae1d7e',
                     link: 'https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDQ2M2I2NTAtYjg1OC00YzlhLWFiN2QtOTQ5MmU1Yjk4NWM0%40thread.v2/0?context=%7b%22Tid%22%3a%2244e3cf94-19c9-4e32-96c3-14f5bf01391a%22%2c%22Oid%22%3a%22f8d4a0be-1d4f-437f-9c22-2e8af4e21e6d%22%7d',
+                },
+                {
+                    id: 5,
+                    title: 'Computer Networks',
+                    professor: 'will be updated',
+                    time: 'will be updated',
+                    date: '2023-02-23',
+                    imageUrl: 'https://cdn.builder.io/api/v1/image/assets/TEMP/0256debb5de7c2fef6964f587a8f67a13485ecfc7e246d0612a25695f746b8b3?apiKey=82f83280471648fbb704a7686cae1d7e',
+                    link: 'https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_YTAwOWE0MzctZjYzOS00ZGI2LTg0ZTYtNjk1ZDY2MzUzNzVj%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%252244e3cf94-19c9-4e32-96c3-14f5bf01391a%2522%252c%2522Oid%2522%253a%252231661c45-4c5f-4755-87be-d3af42991221%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=18002810-0442-491f-a826-e0862929a64c&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true', 
                 }
             ],
         };
