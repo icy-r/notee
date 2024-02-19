@@ -93,6 +93,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    
   }
   
   .logo-name-container {
@@ -118,11 +119,17 @@
   .search-form {
     display: flex;
     background-color: #f0f2f5;
-    border-radius: 12px;
-    padding: 2px 10px;
+    border-radius: 19px;
+    padding: 2px 5px;
     margin: 10px 10px;
-    width: 100%;
+    width: 100;
   }
+
+ 
+
+    .search-form:focus-within {
+        box-shadow: 0 0 0 2px #1c91f2;
+    }
   
   .search-input {
     flex-grow: 1;
@@ -147,7 +154,7 @@
   
   .site-navigation {
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-end;
     width: 100%;
     align-items: flex-end;
   }
