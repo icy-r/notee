@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="column-2">
-        <div class="div-6">
+        <div class="dev-66">
           <img
             loading="lazy"
             srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/142aa3a337c90aa75a4d3cbba12cefed2ecaaef3fd53893ebf13b96f2d82af3f?apiKey=82f83280471648fbb704a7686cae1d7e&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/142aa3a337c90aa75a4d3cbba12cefed2ecaaef3fd53893ebf13b96f2d82af3f?apiKey=82f83280471648fbb704a7686cae1d7e&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/142aa3a337c90aa75a4d3cbba12cefed2ecaaef3fd53893ebf13b96f2d82af3f?apiKey=82f83280471648fbb704a7686cae1d7e&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/142aa3a337c90aa75a4d3cbba12cefed2ecaaef3fd53893ebf13b96f2d82af3f?apiKey=82f83280471648fbb704a7686cae1d7e&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/142aa3a337c90aa75a4d3cbba12cefed2ecaaef3fd53893ebf13b96f2d82af3f?apiKey=82f83280471648fbb704a7686cae1d7e&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/142aa3a337c90aa75a4d3cbba12cefed2ecaaef3fd53893ebf13b96f2d82af3f?apiKey=82f83280471648fbb704a7686cae1d7e&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/142aa3a337c90aa75a4d3cbba12cefed2ecaaef3fd53893ebf13b96f2d82af3f?apiKey=82f83280471648fbb704a7686cae1d7e&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/142aa3a337c90aa75a4d3cbba12cefed2ecaaef3fd53893ebf13b96f2d82af3f?apiKey=82f83280471648fbb704a7686cae1d7e"
@@ -58,7 +58,7 @@ import Swal from 'sweetalert2';
 export default {
     name: 'LecNotes',
     mounted() {
-        let lectureDivs = document.querySelectorAll('.dev-33, .div-6, .div-9, .div-12');
+        let lectureDivs = document.querySelectorAll('.dev-33, .dev-66, .div-9, .div-12');
 
 // Add a click event listener to each lecture div
 lectureDivs.forEach(lectureDiv => {
@@ -162,14 +162,14 @@ lectureDivs.forEach(lectureDiv => {
     width: 100%;
   }
 } */
-.div-6 {
+.dev-66 {
   display: flex;
   flex-grow: 1;
   padding-bottom: 12px;
   flex-direction: column;
 }
 @media (max-width: 991px) {
-  .div-6 {
+  .dev-66 {
     margin-top: 28px;
   }
 }
