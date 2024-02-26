@@ -937,81 +937,84 @@
 
     .back a {
         text-decoration: none;
-        color: #000;
+        color: #3498db;
     }
 
     .back a:hover {
         text-decoration: underline;
     }
 
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #3498db;
+        padding: 5px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #3498db;
+        color: #fff;
+    }
+
     .odd_table {
+        background-color: #ecf0f1;
         margin-top: 20px;
     }
 
     .even_table {
+        background-color: #fff;
         margin-top: 20px;
     }
 
-    .odd_table caption {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
+    .odd_table caption,
     .even_table caption {
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 10px;
+        color: #3498db;
     }
 
-    .odd_table thead th {
-        background-color: #f2f2f2;
-        padding: 10px;
+    thead th {
+        background-color: #3498db;
+        color: #fff;
+        padding: 5px;
         text-align: center;
     }
 
-    .even_table thead th {
-        background-color: #f2f2f2;
-        padding: 10px;
+    tbody th {
+        background-color: #ecf0f1;
+        color: #3498db;
+        padding: 5px;
         text-align: center;
     }
 
-    .odd_table tbody th {
-        background-color: #f2f2f2;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .even_table tbody th {
-        background-color: #f2f2f2;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .odd_table tbody td {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .even_table tbody td {
-        padding: 10px;
+    tbody td {
+        padding: 5px;
         text-align: center;
     }
 
     .detailed {
-        padding: 5px;
+        border: 1px solid #3498db;
+        padding: 4px;
+        text-align: left;
     }
 
     .detailed table {
         width: 100%;
+        border-collapse: collapse;
     }
 
     .detailed table td {
         padding: 5px;
+        border: 1px solid #3498db;
     }
 
     .detailed table tr:nth-child(odd) {
-        background-color: #f2f2f2;
+        background-color: #ecf0f1;
     }
 
     .detailed table tr:nth-child(even) {
@@ -1019,11 +1022,11 @@
     }
 
     .foot {
-        background-color: #f2f2f2;
+        background-color: #ecf0f1;
     }
 
     .foot td {
-        padding: 10px;
+        padding: 5px;
         text-align: center;
     }
 
@@ -1036,65 +1039,26 @@
     }
 
     .yAxis {
-        background-color: #f2f2f2;
-        padding: 10px;
+        background-color: #ecf0f1;
+        padding: 5px;
         text-align: center;
+        width: 10%;
     }
 
     .xAxis {
-        background-color: #f2f2f2;
-        padding: 10px;
+        background-color: #073541;
+        padding: 5px;
         text-align: center;
+        width: 20%;
     }
 
-    .yAxis {
-        background-color: #f2f2f2;
-        padding: 10px;
-        text-align: center;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-    .odd_table {
-      background-color: #f2f2f2;
-    }
-    .even_table {
-      background-color: #ffffff;
-    }
-    .detailed {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-    }
-    .xAxis {
-      width: 20%;
-    }
-    .yAxis {
-      width: 10%;
-    }
-    .back {
-      text-align: right;
-    }
-    .foot {
-      background-color: #f2f2f2;
-    }
     .groups {
-      list-style-type: none;
+        list-style-type: none;
+        color: #3498db;
     }
+
     .groups a {
-      text-decoration: none;
-    }   
-
-    
-
-    </style>
+        text-decoration: none;
+        color: #3498db;
+    }
+</style>
