@@ -1,10 +1,12 @@
 <template>
     <header class="site-header">
       <section class="brand-search-container">
-        <div class="logo-name-container">
+        <a href="/">
+          <div class="logo-name-container">
           <img loading="lazy" src="../assets/logo.png" alt="UniConnect logo" class="brand-logo" />
           <h1 class="brand-name">Notee</h1>
         </div>
+      </a>
         <form class="search-form" @submit.prevent="handleSearch">
           <label for="searchInput" class="visually-hidden">Search</label>
           <input class="search-input" type="search" id="searchInput" placeholder="Search" aria-label="Search" v-model="searchQuery" />
@@ -133,6 +135,7 @@
   
   .search-input {
     flex-grow: 1;
+    border-radius: 19px;
     border: none;
     background: transparent;
     color: #61788a;
@@ -209,6 +212,10 @@
     margin: -1px;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
+  }
+  a{
+    text-decoration: none;
+    color: #121417;
   }
   </style>
   
