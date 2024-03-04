@@ -10,11 +10,12 @@
   "dependencies": {
     "@vercel/analytics": "^1.1.4",
     "@vercel/speed-insights": "^1.0.10",
+    "@vue/compiler-sfc": "^3.4.21",
     "core-js": "^3.8.3",
     "firebase": "^10.8.0",
     "mongodb": "^6.3.0",
     "sweetalert2": "^11.10.5",
-    "vue": "^3.2.13",
+    "vue": "^3.4.21",
     "vue-analytics": "^5.22.1",
     "vue-gtag-next": "^1.14.0",
     "vue-meta": "^2.4.0",
