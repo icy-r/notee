@@ -1,37 +1,30 @@
 <template>
-    <header class="site-header">
-      <section class="brand-search-container">
-        <a href="/">
-          <div class="logo-name-container">
-          <img loading="lazy" src="../assets/logo.png" alt="UniConnect logo" class="brand-logo" />
-          <h1 class="brand-name">Notee</h1>
-        </div>
+  <header class="flex justify-between p-2 border-b border-gray-300">
+    <section class="flex justify-between w-full items-center"> <!-- Add items-center here -->
+      <a href="/" class="flex items-center gap-4 px-2">
+        <img loading="lazy" src="../assets/logo.png" alt="UniConnect logo" class="w-12 h-12 object-cover" />
+        <h1 class="text-lg text-gray-900 font-bold px-2">Notee</h1>
       </a>
-        <form class="search-form" @submit.prevent="handleSearch">
-          <label for="searchInput" class="visually-hidden">Search</label>
-          <input class="search-input" type="search" id="searchInput" placeholder="Search" aria-label="Search" v-model="searchQuery" />
-          <button class="search-button" type="submit">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4b85695d4774e21b2c0d2a766bca0f7d9b4333f2ab8e27a807d1061aa941f60?apiKey=82f83280471648fbb704a7686cae1d7e" alt="Search" class="search-icon" />
-          </button>
-        </form>
-      </section>
-      <nav class="site-navigation">
-        <ul class="nav-links">
-          <li v-for="link in navLinks" :key="link.name">
-            <button @click="navigate(link.href)" class="nav-link">{{ link.name }}</button>
+      <nav class="flex justify-end items-center"> <!-- Add items-center here -->
+        <ul class="flex gap-5 py-auto list-none">
+          <li class="font-bold" v-for="link in navLinks" :key="link.name">
+            <button @click="navigate(link.href)" class="bg-none border-none text-gray-900 text-sm cursor-pointer">{{ link.name }}</button>
           </li>
         </ul>
-        <!-- <div class="action-buttons">
-          <button class="create-button" @click="handleCreate">Create</button>
-          <button class="profile-button" @click="handleProfileClick">
-            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/df7ca25d0c4e23cfedbbb0f3999b90016f9d8b557d020f519abbf0feb3178ec1?apiKey=82f83280471648fbb704a7686cae1d7e" alt="Profile" class="profile-icon" />
-          </button>
-        </div> -->
       </nav>
-    </header>
-  </template>
-  
-  <script>
+    </section>
+    <form class="bg-gray-200 rounded-full px-5 m-2 w-8 hidden" @submit.prevent="handleSearch">
+      <label for="searchInput" class="sr-only">Search</label>
+      <input class="flex-grow rounded-full border-none bg-transparent text-gray-600 text-base" type="search" id="searchInput" placeholder="Search" aria-label="Search" v-model="searchQuery" />
+      <button class="bg-none border-none p-0 flex items-center" type="submit">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/b4b85695d4774e21b2c0d2a766bca0f7d9b4333f2ab8e27a807d1061aa941f60?apiKey=82f83280471648fbb704a7686cae1d7e" alt="Search" class="w-6 h-6" />
+      </button>
+    </form>
+  </header>
+</template>
+
+<!-- Your script and style remain the same -->
+<script>
   import Swal from 'sweetalert2';
   
   export default {
@@ -63,7 +56,7 @@
     },
     methods: {
       handleSearch() {
-        // alert(`Searching for: ${this.searchQuery}`);
+        alert(`Searching for: ${this.searchQuery}`);
       },
       navigate(href) {
         window.location.href = href;
@@ -75,147 +68,7 @@
   };
   </script>
   
-  <style scoped>
-  .site-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 10px;
-    border-bottom: 1px solid #e5e8eb;
-  }
-  
-  @media (max-width: 767px) {
-    .site-header {
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  
-  .brand-search-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    
-  }
-  
-  .logo-name-container {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-  }
-  
-  .brand-logo {
-    width: 3rem;
-    aspect-ratio: 1;
-    object-fit: cover;
-  }
-  
-  .brand-name {
-    font-size: 18px;
-    color: #121417;
-    font-weight: 700;
-    margin: auto;
-    font-family: Lexend, sans-serif;
-  }
-  
-  .search-form {
-    display: flex;
-    background-color: #f0f2f5;
-    border-radius: 19px;
-    padding: 2px 5px;
-    margin: 10px 10px;
-    width: 100;
-  }
 
- 
-
-    .search-form:focus-within {
-        box-shadow: 0 0 0 2px #1c91f2;
-    }
-  
-  .search-input {
-    flex-grow: 1;
-    border-radius: 19px;
-    border: none;
-    background: transparent;
-    color: #61788a;
-    font-size: 16px;
-  }
-  
-  .search-button {
-    background: none;
-    border: none;
-    padding: 0;
-    display: flex;
-    align-items: center;
-  }
-  
-  .search-icon {
-    width: 24px;
-    aspect-ratio: 1;
-  }
-  
-  .site-navigation {
-    display: flex;
-    justify-content:flex-end;
-    width: 100%;
-    align-items: flex-end;
-  }
-  
-  .nav-links {
-    display: flex;
-    gap: 20px;
-    padding: auto;
-    list-style: none;
-  }
-  
-  .nav-link {
-    background: none;
-    border: none;
-    color: #121417;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .action-buttons {
-    display: flex;
-    gap: 10px;
-    padding: auto;
-    margin: auto;
-  }
-  
-  .create-button,
-  .profile-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 12px;
-    margin: 0;
-    padding: 10px;
-    background-color: #1c91f2;
-    color: #fff;
-    font-weight: 700;
-    font-size: 14px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .profile-icon {
-    width: 40px;
-    aspect-ratio: 1;
-  }
-  
-  .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-  }
-  a{
-    text-decoration: none;
-    color: #121417;
-  }
-  </style>
-  
+<style scoped>
+/* Remove all the styles here as they are replaced by Tailwind classes */
+</style>

@@ -1,5 +1,5 @@
 <template>
-    <h3>
+    <h3 class="text-center font-bold underline">
         New notices
     </h3>
     <div class="div" v-for="(notice, index) in limitedNotices" :key="index">

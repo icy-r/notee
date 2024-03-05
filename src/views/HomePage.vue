@@ -1,18 +1,9 @@
 <template>
     <AppHeader />
-    <div class="container">
-        <div class="content">
-            <transition name="fade">
-                <div> 
-                    <NewNotices />
-                </div>
-            </transition>
-        </div>
-    </div>
-    <div>
+    <div class="container flex flex-col " >
+        <NewNotices />
         <lecNotes />
     </div>
-
     <AppFooter />
 </template>
 
@@ -40,7 +31,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<!-- <style scoped>
 .container {
     display: flex;
     flex-direction: column;
@@ -91,4 +82,4 @@ export default {
         opacity: 1;
     }
 }
-</style>
+</style> -->

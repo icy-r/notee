@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <div class="title">
+        <div class="title text-center w-full bg-slate-400 py-5 absolute ">
             <p>Developed by: <a href="https://wa.me/94770664182">ICY</a></p>
         </div>
     </footer>
@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style type="text/css" scoped>
+<!-- <style type="text/css" scoped>
 footer {
     background-color: #ffffff;
     color: rgb(5, 5, 5);
@@ -42,4 +42,4 @@ a {
 a:hover {
     color: #f0f0f0;
 }
-</style>
+</style> -->

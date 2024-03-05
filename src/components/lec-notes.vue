@@ -1,5 +1,5 @@
 <template>
-    <h3 class="notes-title">New Notes</h3>
+    <h3 class="notes-title font-bold underline text-center">New Notes</h3>
 
     <div class="div">
     <div class="div-2">

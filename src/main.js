@@ -3,6 +3,8 @@ import router from "./router";
 import App from "./App.vue";
 import { inject } from '@vercel/analytics';
 import analytic from './firebase';
+import './assets/tailwind.css';
+
 
 inject();
 
