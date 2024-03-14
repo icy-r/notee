@@ -8,7 +8,7 @@
     </table>
     <table>
       <tr align="left" valign="top">
-        <th>Comments:</th>
+        <th>Comments: Version IV</th>
         <td>Default comments</td>
       </tr>
     </table>
@@ -118,37 +118,37 @@
         </tr>
         <tr>
           <th class="yAxis">15:30</th>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0101, Y1.S2.WD.IT.01 QU</td><td class="detailed">Y2.S1.WD.IT.0102</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td><td class="detailed">Ms. Thisara Shyamalee</td></tr><tr><td class="detailed">F1303 + F1304</td><td class="detailed">A410+A411 lab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0101, Y1.S2.WD.IT.01 QU</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F1303 + F1304</td></tr></table></td>
           <td rowspan="2">Y2.S1.WD.IT.01, Y1.S2.WD.IT.01 QU<br />IT2020 - SE Workshop<br />Ms. Uthpala Samarakoon<br />F1308<br /></td>
           <td rowspan="2">IT2060 - OSSA Workshop<br />Ms. Supipi Karunathilaka<br />F303<br /></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0101, Y1.S2.WD.IT.01 QU</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A406-Pclab</td></tr></table></td>
+          <td rowspan="2">Y2.S1.WD.IT.0101, Y1.S2.WD.IT.01 QU, Y2.S1.WD.IT.0102<br />IT2020 - SE Practical<br />Ms. Maneesha Weragoda, Ms. Sujani Chathurika<br />A406-Pclab<br /></td>
           <td>Y2.S1.WD.IT.01, Y2.S1.WD.IT.02, Y2.S1.WD.IT.03, Y2.S1.WD.IT.04 Hybrid, Y2.S1.WD.IT.05, Y1.S2.WD.IT.01 QU, Y2.S1.WD.IT.06<br />IT2030 - OOP Tutorial Online<br />Mr. Hasindu Dahanayake<br />Virtual Class 2<br /></td>
         </tr>
         <tr>
           <th class="yAxis">16:30</th>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0101, Y1.S2.WD.IT.01 QU</td><td class="detailed">Y2.S1.WD.IT.0102</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td><td class="detailed">Ms. Thisara Shyamalee</td></tr><tr><td class="detailed">F1303 + F1304</td><td class="detailed">A410+A411 lab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0101, Y1.S2.WD.IT.01 QU</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F1303 + F1304</td></tr></table></td>
           <!-- span -->
           <!-- span -->
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0101, Y1.S2.WD.IT.01 QU</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A406-Pclab</td></tr></table></td>
+          <!-- span -->
           <td>---</td>
         </tr>
         <tr>
           <th class="yAxis">17.30</th>
-          <td>-x-</td>
+          <td>---</td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0102</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A601-Pclab</td></tr></table></td>
           <td>---</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0102</td></tr><tr><td class="detailed">IT2050 - CN Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A405-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0102</td></tr><tr><td class="detailed">IT2050 - CN Practical</td></tr><tr><td class="detailed">Ms. Ayesha Wijesooriya</td></tr><tr><td class="detailed">A405-Pclab</td></tr></table></td>
           <td>-x-</td>
         </tr>
         <tr>
           <th class="yAxis">18.30</th>
-          <td>-x-</td>
+          <td>---</td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0102</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A601-Pclab</td></tr></table></td>
           <td>---</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0102</td></tr><tr><td class="detailed">IT2050 - CN Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A405-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0102</td></tr><tr><td class="detailed">IT2050 - CN Practical</td></tr><tr><td class="detailed">Ms. Ayesha Wijesooriya</td></tr><tr><td class="detailed">A405-Pclab</td></tr></table></td>
           <td>-x-</td>
         </tr>
-        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/11/24 1:31 PM</td></tr>
+        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/23/24 10:23 AM</td></tr>
       </tbody>
     </table>
 
@@ -204,7 +204,7 @@
           <th class="yAxis">12:30</th>
           <td>---</td>
           <td rowspan="2">IT2020 - SE Workshop<br />Ms. Uthpala Samarakoon<br />F503 IPU Hall<br /></td>
-          <td>---</td>
+          <td rowspan="2">IT2030 - OOP Lecture<br />Ms. Ishara Weerathunga<br />F302<br /></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0202</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td></tr></table></td>
           <td>---</td>
         </tr>
@@ -212,7 +212,7 @@
           <th class="yAxis">13:30</th>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0201</td><td class="detailed">Y2.S1.WD.IT.0202</td></tr><tr><td class="detailed">IT2050 - CN Practical</td><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A410+A411 lab</td><td class="detailed">B403-Pclab</td></tr></table></td>
           <!-- span -->
-          <td>---</td>
+          <!-- span -->
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0202</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td></tr></table></td>
           <td rowspan="2">Y2.S1.WD.IT.01, Y2.S1.WD.IT.02, Y2.S1.WD.IT.03, Y2.S1.WD.IT.04 Hybrid, Y2.S1.WD.IT.05, Y1.S2.WD.IT.01 QU, Y2.S1.WD.IT.06<br />IT2020 - SE Lecture Online<br />Ms. Uthpala Samarakoon<br />Virtual Class 1<br /></td>
         </tr>
@@ -228,7 +228,7 @@
           <th class="yAxis">15:30</th>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0201</td><td class="detailed">Y2.S1.WD.IT.0202</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A602+A603 lab</td><td class="detailed">F305-lab</td></tr></table></td>
           <td rowspan="2">IT2060 - OSSA Workshop<br />Dr. Sanvitha Kasturiarachchi<br />G602<br /></td>
-          <td rowspan="2">IT2030 - OOP Lecture<br />Ms. Ishara Weerathunga<br />F301<br /></td>
+          <td>---</td>
           <td>---</td>
           <td>Y2.S1.WD.IT.01, Y2.S1.WD.IT.02, Y2.S1.WD.IT.03, Y2.S1.WD.IT.04 Hybrid, Y2.S1.WD.IT.05, Y1.S2.WD.IT.01 QU, Y2.S1.WD.IT.06<br />IT2030 - OOP Tutorial Online<br />Mr. Hasindu Dahanayake<br />Virtual Class 2<br /></td>
         </tr>
@@ -236,27 +236,27 @@
           <th class="yAxis">16:30</th>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0201</td><td class="detailed">Y2.S1.WD.IT.0202</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A602+A603 lab</td><td class="detailed">F305-lab</td></tr></table></td>
           <!-- span -->
-          <!-- span -->
+          <td>---</td>
           <td>---</td>
           <td>---</td>
         </tr>
         <tr>
           <th class="yAxis">17.30</th>
-          <td>-x-</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0201</td><td class="detailed">Y2.S1.WD.IT.0202</td></tr><tr><td class="detailed">IT2020 - SE Practical</td><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">B402-Pclab</td><td class="detailed">F305-lab</td></tr></table></td>
+          <td>---</td>
+          <td rowspan="2">Y2.S1.WD.IT.0201, Y2.S1.WD.IT.0202<br />IT2020 - SE Practical<br />Ms. Tasikala Rathnayake, Ms. Anupama Balasooriya<br />B402-Pclab<br /></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0201</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F1301 + F1302</td></tr></table></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0201</td><td class="detailed">Y2.S1.WD.IT.0202</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td><td class="detailed">IT2050 - CN Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">B401-Pclab</td><td class="detailed">F305-lab</td></tr></table></td>
           <td>-x-</td>
         </tr>
         <tr>
           <th class="yAxis">18.30</th>
-          <td>-x-</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0201</td><td class="detailed">Y2.S1.WD.IT.0202</td></tr><tr><td class="detailed">IT2020 - SE Practical</td><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">B402-Pclab</td><td class="detailed">F305-lab</td></tr></table></td>
+          <td>---</td>
+          <!-- span -->
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0201</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F1301 + F1302</td></tr></table></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0201</td><td class="detailed">Y2.S1.WD.IT.0202</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td><td class="detailed">IT2050 - CN Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">B401-Pclab</td><td class="detailed">F305-lab</td></tr></table></td>
           <td>-x-</td>
         </tr>
-        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/11/24 1:31 PM</td></tr>
+        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/23/24 10:23 AM</td></tr>
       </tbody>
     </table>
 
@@ -294,10 +294,10 @@
         </tr>
         <tr>
           <th class="yAxis">10:30</th>
-          <td rowspan="2">IT2030 - OOP Lecture<br />Ms. Thilini Jayalath<br />F1308<br /></td>
+          <td rowspan="2">IT2030 - OOP Lecture<br />Ms. Thilini Jayalath<br />B502<br /></td>
           <td>---</td>
           <td>---</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0302</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed">Ms. Thisara Shyamalee</td></tr><tr><td class="detailed">F1303 + F1304</td></tr></table></td>
+          <td rowspan="2">Y2.S1.WD.IT.0302, Y2.S1.WD.IT.0301<br />IT2020 - SE Practical<br />Ms. Thisara Shyamalee, Mr. Chan Sri Manukalpa<br />F1303 + F1304<br /></td>
           <td rowspan="2">Y2.S1.WD.IT.01, Y2.S1.WD.IT.02, Y2.S1.WD.IT.03, Y2.S1.WD.IT.04 Hybrid, Y2.S1.WD.IT.05, Y2.S1.WD.IT.06<br />IT2060 - OSSA Lecture Online<br />Dr. Sanvitha Kasturiarachchi<br />Virtual Class 1<br /></td>
         </tr>
         <tr>
@@ -305,7 +305,7 @@
           <!-- span -->
           <td rowspan="2">IT2020 - SE Workshop<br />Ms. Thisara Shyamalee<br />F1306<br /></td>
           <td rowspan="3">IT2050 - CN Lecture, Tutorial<br />Ms. Hansika Mahaadikara, Mr. Dhammika De Silva<br />G603<br /></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0302</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed">Ms. Thisara Shyamalee</td></tr><tr><td class="detailed">F1303 + F1304</td></tr></table></td>
+          <!-- span -->
           <!-- span -->
         </tr>
         <tr>
@@ -350,21 +350,21 @@
         </tr>
         <tr>
           <th class="yAxis">17.30</th>
-          <td>-x-</td>
+          <td>---</td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0302</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A405-Pclab</td></tr></table></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0301</td><td class="detailed">Y2.S1.WD.IT.0302</td></tr><tr><td class="detailed">IT2020 - SE Practical</td><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A405-Pclab</td><td class="detailed">A601-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0302</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A601-Pclab</td></tr></table></td>
           <td>---</td>
           <td>-x-</td>
         </tr>
         <tr>
           <th class="yAxis">18.30</th>
-          <td>-x-</td>
+          <td>---</td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0302</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A405-Pclab</td></tr></table></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0301</td><td class="detailed">Y2.S1.WD.IT.0302</td></tr><tr><td class="detailed">IT2020 - SE Practical</td><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A405-Pclab</td><td class="detailed">A601-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0302</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A601-Pclab</td></tr></table></td>
           <td>---</td>
           <td>-x-</td>
         </tr>
-        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/11/24 1:31 PM</td></tr>
+        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/23/24 10:23 AM</td></tr>
       </tbody>
     </table>
 
@@ -386,7 +386,7 @@
       <tbody>
         <tr>
           <th class="yAxis">08:30</th>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0401</td><td class="detailed">Y2.S1.WD.IT.0402</td></tr><tr><td class="detailed">IT2020 - SE Practical</td><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">F305-lab</td><td class="detailed">B403-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0402</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">B403-Pclab</td></tr></table></td>
           <td>---</td>
           <td>---</td>
           <td>---</td>
@@ -394,7 +394,7 @@
         </tr>
         <tr>
           <th class="yAxis">09:30</th>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0401</td><td class="detailed">Y2.S1.WD.IT.0402</td></tr><tr><td class="detailed">IT2020 - SE Practical</td><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">F305-lab</td><td class="detailed">B403-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0402</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">B403-Pclab</td></tr></table></td>
           <td>---</td>
           <td>---</td>
           <td>---</td>
@@ -458,21 +458,21 @@
         </tr>
         <tr>
           <th class="yAxis">17.30</th>
-          <td>-x-</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0402</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">B403-Pclab</td></tr></table></td>
+          <td>---</td>
+          <td rowspan="2">Y2.S1.WD.IT.0402, Y2.S1.WD.IT.0401<br />IT2020 - SE Practical<br />Ms. Sujani Chathurika, Mr. Chan Sri Manukalpa<br />B403-Pclab<br /></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0401</td><td class="detailed">Y2.S1.WD.IT.0402</td></tr><tr><td class="detailed">IT2050 - CN Practical</td><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td><td class="detailed">A410+A411 lab</td></tr></table></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0401</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A602+A603 lab</td></tr></table></td>
           <td>-x-</td>
         </tr>
         <tr>
           <th class="yAxis">18.30</th>
-          <td>-x-</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0402</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">B403-Pclab</td></tr></table></td>
+          <td>---</td>
+          <!-- span -->
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0401</td><td class="detailed">Y2.S1.WD.IT.0402</td></tr><tr><td class="detailed">IT2050 - CN Practical</td><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td><td class="detailed">A410+A411 lab</td></tr></table></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0401</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A602+A603 lab</td></tr></table></td>
           <td>-x-</td>
         </tr>
-        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/11/24 1:31 PM</td></tr>
+        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/23/24 10:23 AM</td></tr>
       </tbody>
     </table>
 
@@ -519,7 +519,7 @@
         <tr>
           <th class="yAxis">11:30</th>
           <!-- span -->
-          <td rowspan="3">IT2050 - CN Lecture, Tutorial<br />Mr. Dhammika De Silva<br />F302<br /></td>
+          <td rowspan="3">IT2050 - CN Lecture, Tutorial<br />F302<br /></td>
           <td>---</td>
           <!-- span -->
           <!-- span -->
@@ -528,7 +528,7 @@
           <th class="yAxis">12:30</th>
           <td>---</td>
           <!-- span -->
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0502</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed">Ms. Thisara Shyamalee</td></tr><tr><td class="detailed">A602+A603 lab</td></tr></table></td>
+          <td rowspan="2">Y2.S1.WD.IT.0502, Y2.S1.WD.IT.0501<br />IT2020 - SE Practical<br />Ms. Thisara Shyamalee<br />A602+A603 lab<br /></td>
           <td rowspan="2">IT2060 - OSSA Workshop<br />Ms. Aparna Jayawardena<br />A506<br /></td>
           <td>---</td>
         </tr>
@@ -536,7 +536,7 @@
           <th class="yAxis">13:30</th>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0501</td><td class="detailed">Y2.S1.WD.IT.0502</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td><td class="detailed">IT2050 - CN Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">B402-Pclab</td><td class="detailed">A602+A603 lab</td></tr></table></td>
           <!-- span -->
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0502</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed">Ms. Thisara Shyamalee</td></tr><tr><td class="detailed">A602+A603 lab</td></tr></table></td>
+          <!-- span -->
           <!-- span -->
           <td rowspan="2">Y2.S1.WD.IT.01, Y2.S1.WD.IT.02, Y2.S1.WD.IT.03, Y2.S1.WD.IT.04 Hybrid, Y2.S1.WD.IT.05, Y1.S2.WD.IT.01 QU, Y2.S1.WD.IT.06<br />IT2020 - SE Lecture Online<br />Ms. Uthpala Samarakoon<br />Virtual Class 1<br /></td>
         </tr>
@@ -566,21 +566,21 @@
         </tr>
         <tr>
           <th class="yAxis">17.30</th>
-          <td>-x-</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0501</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F1301 + F1302</td></tr></table></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0501</td><td class="detailed">Y2.S1.WD.IT.0502</td></tr><tr><td class="detailed">IT2050 - CN Practical</td><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A604-Pclab</td><td class="detailed">F304-lab</td></tr></table></td>
+          <td>---</td>
+          <td>---</td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0501</td><td class="detailed">Y2.S1.WD.IT.0502</td></tr><tr><td class="detailed">IT2050 - CN Practical</td><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed">Ms. Hansika Mahaadikara</td><td class="detailed"></td></tr><tr><td class="detailed">A604-Pclab</td><td class="detailed">F304-lab</td></tr></table></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0501</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F304-lab</td></tr></table></td>
           <td>-x-</td>
         </tr>
         <tr>
           <th class="yAxis">18.30</th>
-          <td>-x-</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0501</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F1301 + F1302</td></tr></table></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0501</td><td class="detailed">Y2.S1.WD.IT.0502</td></tr><tr><td class="detailed">IT2050 - CN Practical</td><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A604-Pclab</td><td class="detailed">F304-lab</td></tr></table></td>
+          <td>---</td>
+          <td>---</td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0501</td><td class="detailed">Y2.S1.WD.IT.0502</td></tr><tr><td class="detailed">IT2050 - CN Practical</td><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed">Ms. Hansika Mahaadikara</td><td class="detailed"></td></tr><tr><td class="detailed">A604-Pclab</td><td class="detailed">F304-lab</td></tr></table></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0501</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F304-lab</td></tr></table></td>
           <td>-x-</td>
         </tr>
-        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/11/24 1:31 PM</td></tr>
+        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/23/24 10:23 AM</td></tr>
       </tbody>
     </table>
 
@@ -603,15 +603,15 @@
         <tr>
           <th class="yAxis">08:30</th>
           <td>---</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0101</td></tr><tr><td class="detailed">IE2012 - SNP Practical CyberSecLab</td></tr><tr><td class="detailed">Tharaniyawarma. K</td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
-          <td rowspan="3">IE2032 - SOS Lecture, Tutorial<br />Ms. Suranjini Silva<br />A505<br /></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0101</td></tr><tr><td class="detailed">IE2012 - SNP Practical CyberSecLab</td></tr><tr><td class="detailed">Mr. Tharaniyawarma. K</td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
+          <td rowspan="3">IE2032 - SOS Lecture, Tutorial<br />Ms. Suranjini Silva<br />G604<br /></td>
           <td>---</td>
           <td>---</td>
         </tr>
         <tr>
           <th class="yAxis">09:30</th>
           <td>---</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0101</td></tr><tr><td class="detailed">IE2012 - SNP Practical CyberSecLab</td></tr><tr><td class="detailed">Tharaniyawarma. K</td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0101</td></tr><tr><td class="detailed">IE2012 - SNP Practical CyberSecLab</td></tr><tr><td class="detailed">Mr. Tharaniyawarma. K</td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
           <!-- span -->
           <td>---</td>
           <td>---</td>
@@ -635,7 +635,7 @@
         <tr>
           <th class="yAxis">12:30</th>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0102</td></tr><tr><td class="detailed">IE2022 - ICS Practical CyberSecLab</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
-          <td rowspan="3">IE2012 - SNP Lecture, Tutorial<br />Ms. Dinithi Sarithma Pandithage, Tharaniyawarma. K<br />G1106<br /></td>
+          <td rowspan="3">IE2012 - SNP Lecture, Tutorial<br />Ms. Dinithi Sarithma Pandithage, Mr. Tharaniyawarma. K<br />G1106<br /></td>
           <td rowspan="3">IE2022 - ICS Lecture, Tutorial<br />Mr. Amila Senarathne<br />G1103<br /></td>
           <td>---</td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0101</td></tr><tr><td class="detailed">IE2042 - DMSS Practical CyberSecLab</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
@@ -660,7 +660,7 @@
           <th class="yAxis">15:30</th>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0101</td></tr><tr><td class="detailed">IE2022 - ICS Practical CyberSecLab</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0101</td></tr><tr><td class="detailed">IE2032 - SOS Practical CyberSecLab</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0102</td></tr><tr><td class="detailed">IE2012 - SNP Practical CyberSecLab</td></tr><tr><td class="detailed">Tharaniyawarma. K</td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0102</td></tr><tr><td class="detailed">IE2012 - SNP Practical CyberSecLab</td></tr><tr><td class="detailed">Mr. Tharaniyawarma. K</td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
           <td>---</td>
           <!-- span -->
         </tr>
@@ -668,13 +668,13 @@
           <th class="yAxis">16:30</th>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0101</td></tr><tr><td class="detailed">IE2022 - ICS Practical CyberSecLab</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0101</td></tr><tr><td class="detailed">IE2032 - SOS Practical CyberSecLab</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0102</td></tr><tr><td class="detailed">IE2012 - SNP Practical CyberSecLab</td></tr><tr><td class="detailed">Tharaniyawarma. K</td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.CS.0102</td></tr><tr><td class="detailed">IE2012 - SNP Practical CyberSecLab</td></tr><tr><td class="detailed">Mr. Tharaniyawarma. K</td></tr><tr><td class="detailed">CyberSecLab</td></tr></table></td>
           <td>---</td>
           <!-- span -->
         </tr>
         <tr>
           <th class="yAxis">17.30</th>
-          <td>-x-</td>
+          <td>---</td>
           <td>---</td>
           <td>---</td>
           <td>---</td>
@@ -682,13 +682,13 @@
         </tr>
         <tr>
           <th class="yAxis">18.30</th>
-          <td>-x-</td>
+          <td>---</td>
           <td>---</td>
           <td>---</td>
           <td>---</td>
           <td>-x-</td>
         </tr>
-        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/11/24 1:31 PM</td></tr>
+        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/23/24 10:23 AM</td></tr>
       </tbody>
     </table>
 
@@ -782,7 +782,7 @@
         </tr>
         <tr>
           <th class="yAxis">17.30</th>
-          <td>-x-</td>
+          <td>---</td>
           <td>---</td>
           <td rowspan="2">Y2.S1.WD.ISE.0101<br />IE2031 - SAD Practical<br />B403-Pclab<br /></td>
           <td>---</td>
@@ -790,13 +790,13 @@
         </tr>
         <tr>
           <th class="yAxis">18.30</th>
-          <td>-x-</td>
+          <td>---</td>
           <td>---</td>
           <!-- span -->
           <td>---</td>
           <td>-x-</td>
         </tr>
-        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/11/24 1:31 PM</td></tr>
+        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/23/24 10:23 AM</td></tr>
       </tbody>
     </table>
 
@@ -837,7 +837,7 @@
           <td>---</td>
           <td rowspan="2">IT2060 - OSSA Workshop<br />Dr. Sanvitha Kasturiarachchi<br />F1307<br /></td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0602</td></tr><tr><td class="detailed">IT2050 - CN Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A602+A603 lab</td></tr></table></td>
-          <td rowspan="2">IT2030 - OOP Workshop<br />G602<br /></td>
+          <td>---</td>
           <td rowspan="2">Y2.S1.WD.IT.01, Y2.S1.WD.IT.02, Y2.S1.WD.IT.03, Y2.S1.WD.IT.04 Hybrid, Y2.S1.WD.IT.05, Y2.S1.WD.IT.06<br />IT2060 - OSSA Lecture Online<br />Dr. Sanvitha Kasturiarachchi<br />Virtual Class 1<br /></td>
         </tr>
         <tr>
@@ -845,7 +845,7 @@
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td></tr><tr><td class="detailed">IT2040 - DMS Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A406-Pclab</td></tr></table></td>
           <!-- span -->
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0602</td></tr><tr><td class="detailed">IT2050 - CN Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A602+A603 lab</td></tr></table></td>
-          <!-- span -->
+          <td>---</td>
           <!-- span -->
         </tr>
         <tr>
@@ -860,13 +860,13 @@
           <th class="yAxis">13:30</th>
           <td>---</td>
           <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0602</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">B402-Pclab</td></tr></table></td>
-          <td rowspan="2">IT2020 - SE Workshop<br />F303<br /></td>
+          <td rowspan="2">IT2020 - SE Workshop<br />Ms. Samanthi Eranga Siriwardene<br />F303<br /></td>
           <td>---</td>
           <td rowspan="2">Y2.S1.WD.IT.01, Y2.S1.WD.IT.02, Y2.S1.WD.IT.03, Y2.S1.WD.IT.04 Hybrid, Y2.S1.WD.IT.05, Y1.S2.WD.IT.01 QU, Y2.S1.WD.IT.06<br />IT2020 - SE Lecture Online<br />Ms. Uthpala Samarakoon<br />Virtual Class 1<br /></td>
         </tr>
         <tr>
           <th class="yAxis">14:30</th>
-          <td rowspan="3">IT2050 - CN Lecture, Tutorial<br />F1308<br /></td>
+          <td rowspan="3">IT2050 - CN Lecture, Tutorial<br />Mr. Dhammika De Silva<br />F1308<br /></td>
           <td>---</td>
           <!-- span -->
           <td>-x-</td>
@@ -875,36 +875,36 @@
         <tr>
           <th class="yAxis">15:30</th>
           <!-- span -->
-          <td>---</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td></tr></table></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td><td class="detailed">Y2.S1.WD.IT.0602</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">F1301 + F1302</td><td class="detailed">A602+A603 lab</td></tr></table></td>
+          <td rowspan="2">IT2030 - OOP Workshop<br />F1307<br /></td>
+          <td rowspan="2">Y2.S1.WD.IT.0601, Y2.S1.WD.IT.0602<br />IT2020 - SE Practical<br />Ms. Anupama Balasooriya, Mr. Chan Sri Manukalpa<br />A412-Pclab<br /></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F1301 + F1302</td></tr></table></td>
           <td>Y2.S1.WD.IT.01, Y2.S1.WD.IT.02, Y2.S1.WD.IT.03, Y2.S1.WD.IT.04 Hybrid, Y2.S1.WD.IT.05, Y1.S2.WD.IT.01 QU, Y2.S1.WD.IT.06<br />IT2030 - OOP Tutorial Online<br />Mr. Hasindu Dahanayake<br />Virtual Class 2<br /></td>
         </tr>
         <tr>
           <th class="yAxis">16:30</th>
           <!-- span -->
-          <td>---</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td></tr><tr><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td></tr></table></td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td><td class="detailed">Y2.S1.WD.IT.0602</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td><td class="detailed">IT2020 - SE Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">F1301 + F1302</td><td class="detailed">A602+A603 lab</td></tr></table></td>
+          <!-- span -->
+          <!-- span -->
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">F1301 + F1302</td></tr></table></td>
           <td>---</td>
         </tr>
         <tr>
           <th class="yAxis">17.30</th>
-          <td>-x-</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td><td class="detailed">Y2.S1.WD.IT.0602</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td><td class="detailed">B401-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0602</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">B401-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td></tr></table></td>
           <td>-x-</td>
           <td>-x-</td>
           <td>-x-</td>
         </tr>
         <tr>
           <th class="yAxis">18.30</th>
-          <td>-x-</td>
-          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td><td class="detailed">Y2.S1.WD.IT.0602</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td><td class="detailed">B401-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0602</td></tr><tr><td class="detailed">IT2060 - OSSA Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">B401-Pclab</td></tr></table></td>
+          <td><table class="detailed"><tr><td class="detailed">Y2.S1.WD.IT.0601</td></tr><tr><td class="detailed">IT2030 - OOP Practical</td></tr><tr><td class="detailed"></td></tr><tr><td class="detailed">A412-Pclab</td></tr></table></td>
           <td>-x-</td>
           <td>-x-</td>
           <td>-x-</td>
         </tr>
-        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/11/24 1:31 PM</td></tr>
+        <tr class="foot"><td></td><td colspan="5">Timetable generated with FET 6.3.0 on 2/23/24 10:23 AM</td></tr>
       </tbody>
     </table>
 
@@ -937,81 +937,84 @@
 
     .back a {
         text-decoration: none;
-        color: #000;
+        color: #3498db;
     }
 
     .back a:hover {
         text-decoration: underline;
     }
 
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #3498db;
+        padding: 5px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #3498db;
+        color: #fff;
+    }
+
     .odd_table {
+        background-color: #ecf0f1;
         margin-top: 20px;
     }
 
     .even_table {
+        background-color: #fff;
         margin-top: 20px;
     }
 
-    .odd_table caption {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
+    .odd_table caption,
     .even_table caption {
         font-size: 20px;
         font-weight: bold;
         margin-bottom: 10px;
+        color: #3498db;
     }
 
-    .odd_table thead th {
-        background-color: #f2f2f2;
-        padding: 10px;
+    thead th {
+        background-color: #3498db;
+        color: #fff;
+        padding: 5px;
         text-align: center;
     }
 
-    .even_table thead th {
-        background-color: #f2f2f2;
-        padding: 10px;
+    tbody th {
+        background-color: #ecf0f1;
+        color: #3498db;
+        padding: 5px;
         text-align: center;
     }
 
-    .odd_table tbody th {
-        background-color: #f2f2f2;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .even_table tbody th {
-        background-color: #f2f2f2;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .odd_table tbody td {
-        padding: 10px;
-        text-align: center;
-    }
-
-    .even_table tbody td {
-        padding: 10px;
+    tbody td {
+        padding: 5px;
         text-align: center;
     }
 
     .detailed {
-        padding: 5px;
+        border: 1px solid #3498db;
+        padding: 4px;
+        text-align: left;
     }
 
     .detailed table {
         width: 100%;
+        border-collapse: collapse;
     }
 
     .detailed table td {
         padding: 5px;
+        border: 1px solid #3498db;
     }
 
     .detailed table tr:nth-child(odd) {
-        background-color: #f2f2f2;
+        background-color: #ecf0f1;
     }
 
     .detailed table tr:nth-child(even) {
@@ -1019,11 +1022,11 @@
     }
 
     .foot {
-        background-color: #f2f2f2;
+        background-color: #ecf0f1;
     }
 
     .foot td {
-        padding: 10px;
+        padding: 5px;
         text-align: center;
     }
 
@@ -1036,65 +1039,26 @@
     }
 
     .yAxis {
-        background-color: #f2f2f2;
-        padding: 10px;
+        background-color: #ecf0f1;
+        padding: 5px;
         text-align: center;
+        width: 10%;
     }
 
     .xAxis {
-        background-color: #f2f2f2;
-        padding: 10px;
+        background-color: #073541;
+        padding: 5px;
         text-align: center;
+        width: 20%;
     }
 
-    .yAxis {
-        background-color: #f2f2f2;
-        padding: 10px;
-        text-align: center;
-    }
-
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-    th, td {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-    }
-    th {
-      background-color: #f2f2f2;
-    }
-    .odd_table {
-      background-color: #f2f2f2;
-    }
-    .even_table {
-      background-color: #ffffff;
-    }
-    .detailed {
-      border: 1px solid black;
-      padding: 8px;
-      text-align: left;
-    }
-    .xAxis {
-      width: 20%;
-    }
-    .yAxis {
-      width: 10%;
-    }
-    .back {
-      text-align: right;
-    }
-    .foot {
-      background-color: #f2f2f2;
-    }
     .groups {
-      list-style-type: none;
+        list-style-type: none;
+        color: #3498db;
     }
+
     .groups a {
-      text-decoration: none;
-    }   
-
-    
-
-    </style>
+        text-decoration: none;
+        color: #3498db;
+    }
+</style>
