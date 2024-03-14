@@ -3,7 +3,7 @@
     <h3 class="text-center font-bold underline">New notices</h3>
     <div v-if="loading">Loading notices...</div>
     <div v-else-if="error">{{ error }}</div>
-    <div v-else>
+    <div v-else class="scrollable-div">
       <div
         v-for="(notice, index) in limitedNotices"
         :key="index"
@@ -21,7 +21,7 @@
           </div>
         </a>
       </div>
-      <div v-if="notices.length > 4">
+      <div v-if="notices.length > 3">
         <a href="#" @click.prevent="navigateToMore" class="no-underline text-blue-500 font-medium text-base mt-3 block">More...</a>
       </div>
     </div>
@@ -42,7 +42,7 @@ export default {
   },
   computed: {
     limitedNotices() {
-      return this.notices.slice(0, 4);
+      return this.notices.slice(0, 3);
     },
   },
   methods: {
@@ -53,14 +53,12 @@ export default {
       try {
         const response = await axios.get('http://localhost:3000/api/notices/y2s1');
         const { data } = response;
-        // console.log('Fetched notices:', data);
         this.notices = data;
       } catch (error) {
         console.error('Error fetching notices:', error.message);
         this.error = 'An error occurred while fetching notices. Please try again later.';
       } finally {
         this.loading = false;
-        // console.log('Loading state:', this.loading);
       }
     },
   },
@@ -69,3 +67,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.scrollable-div {
+  max-height: 600px; /* Adjust this value as needed */
+  overflow-y: auto;
+}
+</style>

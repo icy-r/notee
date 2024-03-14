@@ -6,6 +6,7 @@ const connectDB = require('./db');
 const cors = require('cors');
 const noticesController = require('./db/notices');
 const adminRoutes = require('./routes/adminRoutes');
+const leclinks = require('./db/fetchlecdetails');
 
 // Middleware
 app.use(express.json()); // Parse JSON request bodies
@@ -21,6 +22,9 @@ connectDB()
     app.get('/api/notices/y2s1', noticesController.getAllNotices);
     app.put('/api/notices/:id', noticesController.updateNotice);
     app.use('/api/admin', adminRoutes);
+
+    app.get('/api/lecture-details', leclinks.fetchLecDetails);
+    app.post('/api/lecture-details/create', leclinks.createLecDetails);
 
     // Serve static files from the Vue.js build directory
     app.use(express.static(path.join(__dirname, '../dist')));

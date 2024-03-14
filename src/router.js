@@ -30,7 +30,12 @@ const routes = [
         path: '/admin-dashboard',
         name: 'AdminDashboard',
         component: AdminDashboard
-    }
+    },
+    {
+        path: '/secretAccess',
+        name: 'SecretAccess',
+        component: () => import('./views/SecretAccess.vue')
+    },
 ]
 
 const router = createRouter({
