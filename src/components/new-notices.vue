@@ -51,7 +51,7 @@ export default {
     },
     async fetchNotices() {
       try {
-        const response = await axios.get('http://localhost:3000/api/notices/y2s1');
+        const response = await axios.get('http://45.76.155.187:7002/api/notices/y2s1');
         const { data } = response;
         this.notices = data;
       } catch (error) {
