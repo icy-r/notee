@@ -51,7 +51,7 @@ export default {
     },
     async fetchNotices() {
       try {
-        const response = await axios.get('http://localhost:3000/api/notices/y2s1');
+        const response = await axios.get('https://lecture-details.vercel.app:3000/api/notices/y2s1');
         const { data } = response;
         this.notices = data;
       } catch (error) {
