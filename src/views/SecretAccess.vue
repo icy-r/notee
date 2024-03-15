@@ -60,7 +60,7 @@ const updateLecture = () => {
         date: date.toLocaleDateString(),
     };
 
-    fetch('http://localhost:3000/api/lecture-details/create', {
+    fetch('http://45.76.155.187:7002/api/lecture-details/create', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

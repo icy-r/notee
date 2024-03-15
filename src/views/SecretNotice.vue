@@ -75,7 +75,7 @@
        expiryDate: noticeFormState.expiryDate.format('YYYY-MM-DD'),
     };
    
-    fetch('http://localhost:3000/api/notices/create', {
+    fetch('http://45.76.155.187:7002/api/notices/create', {
        method: 'POST',
        headers: {
          'Content-Type': 'application/json'

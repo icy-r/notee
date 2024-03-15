@@ -55,7 +55,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await axios.get('http://localhost:3000/api/lecture-details');
+      const response = await axios.get('http://45.76.155.187:7002/api/lecture-details');
       const { data } = response;
       this.lectures = data.map(lecture => ({
         id: lecture.id,
