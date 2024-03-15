@@ -57,7 +57,7 @@ export default {
                 this.lectures = data.map(lecture => ({
                     id: lecture.id,
                     title: lecture.title,
-                    professor: lecture.professer,
+                    professor: lecture.professor,
                     time: lecture.time,
                     date: date.toLocaleDateString(),
                     imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/0256debb5de7c2fef6964f587a8f67a13485ecfc7e246d0612a25695f746b8b3?apiKey=82f83280471648fbb704a7686cae1d7e",
