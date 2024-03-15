@@ -74,8 +74,9 @@
        updateTime: noticeFormState.updateTime.format('YYYY-MM-DD'),
        expiryDate: noticeFormState.expiryDate.format('YYYY-MM-DD'),
     };
-   
+    
     fetch(`${process.env.VUE_APP_API_BASE_URL}/api/api/notices/create`, {
+
        method: 'POST',
        headers: {
          'Content-Type': 'application/json'

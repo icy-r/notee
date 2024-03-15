@@ -56,6 +56,7 @@ export default {
   async mounted() {
     try {
       const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/api/lecture-details`);
+
       const { data } = response;
       this.lectures = data.map(lecture => ({
         id: lecture.id,

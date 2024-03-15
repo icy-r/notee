@@ -61,6 +61,7 @@ const updateLecture = () => {
     };
 
     fetch(`${process.env.VUE_APP_API_BASE_URL}/api/lecture-details/create`, {
+
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
