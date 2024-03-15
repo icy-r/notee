@@ -5,11 +5,8 @@ exports.createNotice = async (req, res) => {
   try {
     const client = await connectDB();
     const db = client.db("notee");
-    const { title, course, image, url, desc, createdAt } = req.body;
-    const notice = { title, course, image, url, desc, createdAt };
     await db.collection('notices').updateOne(
-      { name: 'Year 2 Semester 1' },
-      { $push: { Y2S1: notice } }
+      
     );
     res.status(201).json(notice);
   } catch (error) {
