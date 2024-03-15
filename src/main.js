@@ -7,7 +7,7 @@ import './assets/tailwind.css';
 import 'vue-toast-notification/dist/theme-default.css';
 import VueToast from 'vue-toast-notification'
 
-const cors = require('cors');
+
 
 
 
@@ -35,5 +35,5 @@ const app = createApp(App);
 app.use(router);
 app.use(Antd); // Register Ant Design Vue globally
 app.use(VueToast);
-app.use(cors());
+
 app.mount("#app");
