@@ -60,7 +60,7 @@ const updateLecture = () => {
         date: date.toLocaleDateString(),
     };
 
-    fetch('http://localhost:3000/api/lecture-details/create', {
+    fetch(`${process.env.VUE_APP_API_BASE_URL}/api/lecture-details/create`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
