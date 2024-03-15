@@ -7,6 +7,9 @@ const cors = require('cors');
 const noticesController = require('./db/notices');
 const adminRoutes = require('./routes/adminRoutes');
 const leclinks = require('./db/fetchlecdetails');
+const compression = require('compression');
+
+app.use(compression());
 
 // Middleware
 app.use(express.json()); // Parse JSON request bodies
@@ -14,7 +17,7 @@ app.use(cors()); // Enable CORS for cross-origin requests
 
 // Connect to MongoDB
 connectDB()
-  .then(() => {
+ .then(() => {
     console.log('Connected to MongoDB');
 
     // Routes
@@ -34,11 +37,17 @@ connectDB()
       res.sendFile(path.join(__dirname, '../dist', 'index.html'));
     });
 
+    // Error handling middleware
+    app.use((err, req, res, next) => {
+      console.error(err.stack);
+      res.status(err.status || 500).send({ error: err.message });
+    });
+
     // Start the server
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
-  })
-  .catch((err) => {
+ })
+ .catch((err) => {
     console.error('Failed to connect to MongoDB', err);
-  });
+ });
