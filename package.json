@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "serve": "vue-cli-service serve & cd backend && node server.js",
+    "build": "cd backend && node server.js & cd .. && vue-cli-service build",
     "start": "cd backend && node server.js"
   },
   "dependencies": {
