@@ -18,7 +18,7 @@ connectDB()
     console.log('Connected to MongoDB');
 
     // Routes
-    app.post('/api/notices', noticesController.createNotice);
+    app.post('/api/notices/create', noticesController.createNotice);
     app.get('/api/notices/y2s1', noticesController.getAllNotices);
     app.put('/api/notices/:id', noticesController.updateNotice);
     app.use('/api/admin', adminRoutes);

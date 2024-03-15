@@ -36,6 +36,11 @@ const routes = [
         name: 'SecretAccess',
         component: () => import('./views/SecretAccess.vue')
     },
+    {
+        path: '/secretnotice',
+        name: 'SecretNotice',
+        component: () => import('./views/SecretNotice.vue')
+    }
 ]
 
 const router = createRouter({
