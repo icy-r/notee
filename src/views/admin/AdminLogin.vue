@@ -6,7 +6,7 @@
                 <form class="flex flex-col gap-4" @submit.prevent="login">
                     <div class="flex flex-col gap-2">
                         <label for="email" class="text-gray-600">Email</label>
-                        <input type="email" id="email" v-model="email" class="w-full p-2 border border-gray-300 rounded-lg" />
+                        <input type="text" id="email" v-model="email" class="w-full p-2 border border-gray-300 rounded-lg" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <label for="password" class="text-gray-600">Password</label>
@@ -32,7 +32,7 @@ export default {
     methods: {
         async login() {
             try {
-                const response = await axios.post('http://localhost:3000/api/admin/login', {
+                const response = await axios.post(`${process.env.VUE_APP_API_BASE_URL}/api/admin/create-token`, {
                     email: this.email,
                     password: this.password,
                 });

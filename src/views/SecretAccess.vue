@@ -18,9 +18,16 @@
                     </div>
                 </div>
             </div>
-            <div class="flex items-center">
-                <!-- <a @click="navigate('/edit-lec-link')" class="py-2 px-4 bg-gray-200 rounded" >Edit</a> -->
-                <router-link :to="{ name: 'EditLecLink', params: { id: lecture.id }}" class="py-2 px-4 bg-gray-200 rounded">Edit</router-link>
+            <div class="flex items-center gap-2">
+                <div>
+                    <!-- <a @click="navigate('/edit-lec-link')" class="py-2 px-4 bg-gray-200 rounded" >Edit</a> -->
+                    <router-link :to="{ name: 'EditLecLink', params: { id: lecture.id } }"
+                        class="py-2 px-4 bg-gray-200 rounded">Edit</router-link>
+                </div>
+                <div>
+                    <!-- <a @click="navigate('/edit-lec-link')" class="py-2 px-4 bg-gray-200 rounded" >Edit</a> -->
+                    <a @click="deleteLecture(lecture.id, fetchLectures)" class="py-2 px-4 bg-gray-200 rounded cursor-pointer">Delete</a>
+                </div>
             </div>
         </div>
         <div class="p-10 text-center">
@@ -58,9 +65,27 @@
 import { reactive, toRaw, ref } from 'vue';
 import { useToast } from 'vue-toast-notification';
 import axios from 'axios';
+const toast = useToast();
 
 export default {
     name: 'alllecDetails',
+    methods: {
+        async deleteLecture(id , fetchLectures) {
+            try {
+                const response = await axios.delete(`${process.env.VUE_APP_API_BASE_URL}/api/delete-leclinks?${id}`);
+                if (response.status === 200) {
+                    // Handle successful delete (e.g., remove the lecture from the list)
+                    toast.success("Successfully deleted")
+                } else {
+                    throw new Error(`Unexpected status code: ${response.status}`);
+                }
+            } catch (error) {
+                console.error('Error deleting lecture:', error.message);
+                // Handle error (e.g., show an error message)
+            }
+            fetchLectures();
+        }
+    },
     setup() {
         const lectureFormState = reactive({
             id: '1',
@@ -81,10 +106,11 @@ export default {
             span: 14,
         };
 
-        const toast = useToast();
+        
 
         const lectures = ref([]);
         const loading = ref(true);
+        // const deleteit = `${process.env.VUE_APP_API_BASE_URL}/api/delete-leclink`
 
         const fetchLectures = async () => {
             try {
@@ -138,13 +164,17 @@ export default {
 
         fetchLectures(); // Fetch lectures when the component is created
 
+
+
         return {
             lectureFormState,
             labelCol,
             wrapperCol,
             updateLecture,
             lectures,
-            loading
+            loading,
+            fetchLectures
+            // deleteit
         };
     }
 }
