@@ -90,7 +90,7 @@ export default {
             const requestData = toRaw(lectureFormState);
             console.log(id)
             try {
-                const response = await fetch(`${process.env.VUE_APP_API_BASE_URL}/api/edit-leclink`, {
+                const response = await fetch(`${process.env.VUE_APP_API_BASE_URL}/api/edit-leclinks`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
