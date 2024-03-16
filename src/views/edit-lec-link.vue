@@ -32,6 +32,7 @@
 <script>
 // eslint-disable-next-line
 import { reactive, toRaw, ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
 import { useToast } from 'vue-toast-notification';
 import axios from 'axios';
 
@@ -80,7 +81,7 @@ export default {
             const requestData = toRaw(lectureFormState);
 
             try {
-                const response = await axios.put(`${process.env.VUE_APP_API_BASE_URL}/api/edit-leclink/${requestData.id}`, requestData);
+                const response = await axios.put(`${process.env.VUE_APP_API_BASE_URL}/api/edit-leclink${requestData.id}`, requestData);
 
                 if (response.status === 200) {
                     toast.success('Successfully updated!');
@@ -94,7 +95,8 @@ export default {
         };
 
         onMounted(() => {
-            const id = this.$route.params.id;
+            const route = useRoute();
+            const id = route.params.id;
             fetchLecture(id);
             console.log(id);
         });
