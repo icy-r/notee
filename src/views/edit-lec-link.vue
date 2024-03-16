@@ -64,7 +64,7 @@ export default {
             try {
                 const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/api/get-edit-leclinks?${id}`);
                 const { data } = response;
-                console.log(data)
+                // console.log(data)
                 lectureFormState.id = data.id;
                 lectureFormState.title = data.title;
                 lectureFormState.professor = data.professor;
@@ -76,13 +76,22 @@ export default {
                 toast.error('An error occurred while fetching lecture. Please try again later.');
             }
         };
+        let id;
+        onMounted(() => {
+            const route = useRoute();
+            id = route.params.id;
+            fetchLecture(id);
+            console.log(id);
+        });
+
+        
 
         const updateLecture = async () => {
             const requestData = toRaw(lectureFormState);
-
+            console.log(id)
             try {
-                const response = await axios.put(`${process.env.VUE_APP_API_BASE_URL}/api/edit-leclink${requestData.id}`, requestData);
-
+                const response = await axios.put(`${process.env.VUE_APP_API_BASE_URL}/api/edit-leclink`, { _id: id, ...requestData });
+                
                 if (response.status === 200) {
                     toast.success('Successfully updated!');
                 } else {
@@ -94,12 +103,7 @@ export default {
             }
         };
 
-        onMounted(() => {
-            const route = useRoute();
-            const id = route.params.id;
-            fetchLecture(id);
-            console.log(id);
-        });
+        
 
         return {
             lectureFormState,
