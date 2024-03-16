@@ -40,6 +40,11 @@ const routes = [
         path: '/secretnotice',
         name: 'SecretNotice',
         component: () => import('./views/SecretNotice.vue')
+    },
+    {
+        path: '/edit-lec-link/:id',
+        name: 'EditLecLink',
+        component: () => import('./views/edit-lec-link.vue')
     }
 ]
 

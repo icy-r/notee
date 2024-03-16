@@ -19,7 +19,8 @@
                 </div>
             </div>
             <div class="flex items-center">
-                <a :href="lecture.link" class="py-2 px-4 bg-gray-200 rounded" target="_blank">Join</a>
+                <!-- <a @click="navigate('/edit-lec-link')" class="py-2 px-4 bg-gray-200 rounded" >Edit</a> -->
+                <router-link :to="{ name: 'EditLecLink', params: { id: lecture.id }}" class="py-2 px-4 bg-gray-200 rounded">Edit</router-link>
             </div>
         </div>
         <div class="p-10 text-center">
