@@ -37,6 +37,7 @@ import axios from 'axios';
 
 export default {
     name: 'EditLecLink',
+    
     setup() {
         const lectureFormState = reactive({
             id: '',
@@ -58,6 +59,11 @@ export default {
         };
 
         const toast = useToast();
+
+        onMounted(() => {
+            const id = this.$route.params.id;
+            fetchLecture(id);
+        });
 
         const fetchLecture = async (id) => {
             try {
@@ -93,10 +99,7 @@ export default {
             }
         };
 
-        onMounted(() => {
-            const id = this.$route.params.id;
-            fetchLecture(id);
-        });
+        
 
         return {
             lectureFormState,
