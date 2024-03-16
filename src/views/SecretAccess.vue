@@ -11,7 +11,7 @@
                 <div class="flex flex-col">
                     <div class="text-xl font-semibold">{{ lecture.title }}</div>
                     <div class="text-gray-700">
-                        Lecture {{ lecture.id }}<br />
+                        Lecture {{ lecture._id }}<br />
                         Professor: {{ lecture.professor }}<br />
                         Time: {{ lecture.time }}<br />
                         Date: {{ lecture.date }}
