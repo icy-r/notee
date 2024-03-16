@@ -55,7 +55,7 @@ export default {
   },
   async mounted() {
     try {
-      const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/api/lecture-details`);
+      const response = await axios.get(`https://nodejs-serverless-function-express-seven-dusky.vercel.app/api/manage-leclinks`);
 
       const { data } = response;
       this.lectures = data.map(lecture => ({
