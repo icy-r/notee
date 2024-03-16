@@ -84,18 +84,24 @@ export default {
             console.log(id);
         });
 
-        
+
 
         const updateLecture = async () => {
             const requestData = toRaw(lectureFormState);
             console.log(id)
             try {
-                const response = await axios.put(`${process.env.VUE_APP_API_BASE_URL}/api/edit-leclink`, { _id: id, ...requestData });
-                
-                if (response.status === 200) {
-                    toast.success('Successfully updated!');
+                const response = await fetch(`${process.env.VUE_APP_API_BASE_URL}/api/edit-leclink`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ _id: id, ...requestData })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 } else {
-                    throw new Error(`Unexpected status code: ${response.status}`);
+                    toast.success('Successfully updated!');
                 }
             } catch (error) {
                 console.error('There has been a problem with your fetch operation:', error);
@@ -103,7 +109,7 @@ export default {
             }
         };
 
-        
+
 
         return {
             lectureFormState,
