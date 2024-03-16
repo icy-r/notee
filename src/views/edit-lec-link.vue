@@ -63,6 +63,7 @@ export default {
             try {
                 const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/api/get-edit-leclinks?${id}`);
                 const { data } = response;
+                console.log(data)
                 lectureFormState.id = data.id;
                 lectureFormState.title = data.title;
                 lectureFormState.professor = data.professor;
