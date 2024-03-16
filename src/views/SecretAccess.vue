@@ -2,7 +2,8 @@
     <div>
         <h2 class="text-center bold uppercase underline text-xl">Lecture Details</h2>
         <div v-if="loading">Loading lectures...</div>
-        <div v-for="lecture in lectures" :key="lecture.id" class="flex items-start justify-between w-full max-w-5xl gap-4 p-4">
+        <div v-for="lecture in lectures" :key="lecture.id"
+            class="flex items-start justify-between w-full max-w-5xl gap-4 p-4">
             <div class="flex items-start gap-4">
                 <div class="w-12 h-12">
                     <img :src="lecture.imageUrl" class="w-full h-full object-cover rounded" loading="lazy" />
@@ -22,7 +23,32 @@
             </div>
         </div>
         <div class="p-10 text-center">
-            <!-- Your form goes here -->
+            <div>
+                <h2 class="text-center bold uppercase underline text-xl">Lecture Details</h2>
+                <div class="p-10 text-center">
+                    <a-form :model="lectureFormState" :label-col="labelCol" :wrapper-col="wrapperCol">
+                        <a-form-item label="Lecture Title">
+                            <a-input v-model:value="lectureFormState.title" />
+                        </a-form-item>
+                        <a-form-item label="Professor">
+                            <a-input v-model:value="lectureFormState.professor" />
+                        </a-form-item>
+                        <a-form-item label="Time">
+                            <a-input v-model:value="lectureFormState.time" />
+                        </a-form-item>
+                        <a-form-item label="Image URL">
+                            <a-input v-model:value="lectureFormState.imageUrl" />
+                        </a-form-item>
+                        <a-form-item label="Lecture Link">
+                            <a-input v-model:value="lectureFormState.link" />
+                        </a-form-item>
+                        <a-form-item :wrapper-col="{ span: 14, offset: 4 }">
+                            <a-button type="primary" @click="updateLecture">Update Lecture Link</a-button>
+                            <a-button style="margin-left: 10px">Cancel</a-button>
+                        </a-form-item>
+                    </a-form>
+                </div>
+            </div>
         </div>
     </div>
 </template>
