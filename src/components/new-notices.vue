@@ -52,7 +52,7 @@ export default {
     async fetchNotices() {
       try {
         console.log('API_BASE_URL:', process.env.VUE_APP_API_BASE_URL);
-        const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/api/notices/y2s1`);
+        const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/api/get-all-notices`);
         const { data } = response;
         this.notices = data;
       } catch (error) {
