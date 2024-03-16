@@ -11,7 +11,7 @@
                 <div class="flex flex-col">
                     <div class="text-xl font-semibold">{{ lecture.title }}</div>
                     <div class="text-gray-700">
-                        Lecture {{ lecture._id }}<br />
+                        Lecture {{ lecture.id }}<br />
                         Professor: {{ lecture.professor }}<br />
                         Time: {{ lecture.time }}<br />
                         Date: {{ lecture.date }}
@@ -90,7 +90,7 @@ export default {
                 const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/api/manage-leclinks`);
                 const { data } = response;
                 lectures.value = data.map(lecture => ({
-                    id: lecture.id,
+                    id: lecture._id,
                     title: lecture.title,
                     professor: lecture.professor,
                     time: lecture.time,
