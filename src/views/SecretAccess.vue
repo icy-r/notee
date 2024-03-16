@@ -60,7 +60,7 @@ const updateLecture = () => {
         date: date.toLocaleDateString(),
     };
 
-    fetch(`${process.env.VUE_APP_API_BASE_URL}/api/lecture-details/create`, {
+    fetch(`${process.env.VUE_APP_API_BASE_URL}/api/create-leclink`, {
 
         method: 'POST',
         headers: {
