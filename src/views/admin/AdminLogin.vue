@@ -6,13 +6,16 @@
                 <form class="flex flex-col gap-4" @submit.prevent="login">
                     <div class="flex flex-col gap-2">
                         <label for="email" class="text-gray-600">Email</label>
-                        <input type="text" id="email" v-model="email" class="w-full p-2 border border-gray-300 rounded-lg" />
+                        <input type="text" id="email" v-model="email"
+                            class="w-full p-2 border border-gray-300 rounded-lg" />
                     </div>
                     <div class="flex flex-col gap-2">
                         <label for="password" class="text-gray-600">Password</label>
-                        <input type="password" id="password" v-model="password" class="w-full p-2 border border-gray-300 rounded-lg" />
+                        <input type="password" id="password" v-model="password"
+                            class="w-full p-2 border border-gray-300 rounded-lg" />
                     </div>
-                    <button type="submit" class="w-full p-2 bg-blue-500 hover:bg-blue-700 text-white font-medium rounded-lg">Login</button>
+                    <button type="submit"
+                        class="w-full p-2 bg-blue-500 hover:bg-blue-700 text-white font-medium rounded-lg">Login</button>
                 </form>
             </div>
         </div>
@@ -20,6 +23,7 @@
 </template>
 
 <script>
+//eslint-disable-next-line
 import axios from 'axios';
 export default {
     name: 'AdminLogin',
@@ -32,20 +36,25 @@ export default {
     methods: {
         async login() {
             try {
-                const response = await axios.post(`${process.env.VUE_APP_API_BASE_URL}/api/admin/create-token`, {
-                    email: this.email,
-                    password: this.password,
+                const response = await fetch(`${process.env.VUE_APP_API_BASE_URL}/api/admin/create-token`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        email: this.email,
+                        password: this.password,
+                    })
                 });
-                const { data } = response;
+                const data = await response.json();
+
                 console.log('Admin login response:', data);
-                if(data.token)
-                {
+                if (data.token) {
                     localStorage.setItem('token', data.token);
                     this.$router.push('/admin-dashboard');
                 }
-                else
-                {
-                    console.error('invalid response from server');  
+                else {
+                    console.error('invalid response from server');
                 }
 
                 // this.$router.push('api/admin');
