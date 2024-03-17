@@ -7,7 +7,7 @@
            <li class="bg-slate-400 p-1 rounded-md"><router-link to="/admin-dashboard" class="hover:text-gray-300">Dashboard</router-link></li>
            <li class="bg-slate-400 p-1 rounded-md"><router-link to="/managenotice" class="hover:text-gray-300">Notices</router-link></li>
            <li class="bg-slate-400 p-1 rounded-md"><router-link to="/managelec" class="hover:text-gray-300">Lecture Links</router-link></li>
-           <li class="bg-slate-400 p-1 rounded-md"><router-link to="/soon" class="hover:text-gray-300">Soon</router-link></li>
+           <li class="bg-slate-400 p-1 rounded-md"><router-link to="/" class="hover:text-gray-300">home</router-link></li>
            <li class="bg-slate-400 p-1 rounded-md"><a href="#" @click.prevent="logout" class="hover:text-gray-300 font-bold">Logout</a></li>
          </ul>
        </div>
