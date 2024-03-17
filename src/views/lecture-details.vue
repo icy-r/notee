@@ -40,6 +40,7 @@
 import AppHeader from '@/components/Header.vue';
 import AppFooter from '@/components/Footer.vue';
 import axios from 'axios';
+import { message } from 'ant-design-vue'
 
 const date = new Date();
 
@@ -52,11 +53,13 @@ export default {
   data() {
     return {
       lectures: [],
-      loading: true
+      loading: true,
+      error: null,
     };
   },
   async mounted() {
     try {
+      const hide = message.loading('Loading lecture links', 0);
       const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/api/manage-leclinks`);
 
       const { data } = response;
@@ -69,6 +72,7 @@ export default {
         imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/0256debb5de7c2fef6964f587a8f67a13485ecfc7e246d0612a25695f746b8b3?apiKey=82f83280471648fbb704a7686cae1d7e",
         link: lecture.link,
       }));
+      hide();
       // console.table(this.lectures);
     } catch (error) {
       console.error('Error fetching lectures:', error.message);

@@ -32,19 +32,19 @@ const routes = [
         component: AdminDashboard
     },
     {
-        path: '/secretAccess',
-        name: 'SecretAccess',
-        component: () => import('./views/SecretAccess.vue')
+        path: '/managelec',
+        name: 'managelec',
+        component: () => import('./components/admin/manage-leec-link.vue')
     },
     {
-        path: '/secretnotice',
-        name: 'SecretNotice',
-        component: () => import('./views/SecretNotice.vue')
+        path: '/managenotice',
+        name: 'managenotice',
+        component: () => import('./components/admin/Add-Notice.vue')
     },
     {
         path: '/edit-lec-link/:id',
         name: 'EditLecLink',
-        component: () => import('./views/edit-lec-link.vue')
+        component: () => import('./components/admin/edit-lec-link.vue')
     }
 ]
 
