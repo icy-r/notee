@@ -33,7 +33,7 @@
       return {
         navLinks: [
           { name: "Home", href: "/" },
-          { name: "Lecture", href: "/lecture-details" },
+          { name: "Lecture-links", href: "/lecture-details" },
           { name: "TimeTable", href: "timetable" },
           // { name: "Groups", href: "#" },
           // { name: "Explore", href: "#" },
