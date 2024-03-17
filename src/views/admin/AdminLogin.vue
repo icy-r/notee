@@ -24,7 +24,9 @@
 
 <script>
 //eslint-disable-next-line
+// Import axios
 import axios from 'axios';
+
 export default {
     name: 'AdminLogin',
     data() {
@@ -36,32 +38,22 @@ export default {
     methods: {
         async login() {
             try {
-                const response = await fetch(`${process.env.VUE_APP_API_BASE_URL}/api/admin/create-token`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        email: this.email,
-                        password: this.password,
-                    })
+                const response = await axios.post(`${process.env.VUE_APP_API_BASE_URL}/api/admin/create-token`, {
+                    email: this.email,
+                    password: this.password,
                 });
-                const data = await response.json();
 
-                console.log('Admin login response:', data);
-                if (data.token) {
-                    localStorage.setItem('token', data.token);
+                if (response.status === 200 && response.data.token) {
+                    localStorage.setItem('token', response.data.token);
                     this.$router.push('/admin-dashboard');
+                } else {
+                    console.error('Invalid response from server');
                 }
-                else {
-                    console.error('invalid response from server');
-                }
-
-                // this.$router.push('api/admin');
             } catch (error) {
                 console.error('Error logging in:', error.message);
             }
         },
     },
 };
+
 </script>
