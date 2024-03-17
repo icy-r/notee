@@ -26,7 +26,8 @@
                 </div>
                 <div>
                     <!-- <a @click="navigate('/edit-lec-link')" class="py-2 px-4 bg-gray-200 rounded" >Edit</a> -->
-                    <a @click="deleteLecture(lecture.id, fetchLectures)" class="py-2 px-4 bg-gray-200 rounded cursor-pointer">Delete</a>
+                    <a @click="deleteLecture(lecture.id, fetchLectures)"
+                        class="py-2 px-4 bg-gray-200 rounded cursor-pointer">Delete</a>
                 </div>
             </div>
         </div>
@@ -51,7 +52,7 @@
                             <a-input v-model:value="lectureFormState.link" />
                         </a-form-item>
                         <a-form-item :wrapper-col="{ span: 14, offset: 4 }">
-                            <a-button type="primary" @click="updateLecture">Update Lecture Link</a-button>
+                            <a-button class=" bg-slate-600" type="primary" @click="updateLecture">Update Lecture Link</a-button>
                             <a-button style="margin-left: 10px">Cancel</a-button>
                         </a-form-item>
                     </a-form>
@@ -65,13 +66,15 @@
 import { reactive, toRaw, ref } from 'vue';
 import { useToast } from 'vue-toast-notification';
 import axios from 'axios';
+import { message } from 'ant-design-vue'
 const toast = useToast();
 
 export default {
     name: 'alllecDetails',
     methods: {
-        async deleteLecture(id , fetchLectures) {
+        async deleteLecture(id, fetchLectures) {
             try {
+                const hide = message.loading('deleting', 0);
                 const response = await axios.delete(`${process.env.VUE_APP_API_BASE_URL}/api/delete-leclinks?${id}`);
                 if (response.status === 200) {
                     // Handle successful delete (e.g., remove the lecture from the list)
@@ -79,6 +82,7 @@ export default {
                 } else {
                     throw new Error(`Unexpected status code: ${response.status}`);
                 }
+                hide();
             } catch (error) {
                 console.error('Error deleting lecture:', error.message);
                 // Handle error (e.g., show an error message)
@@ -106,7 +110,7 @@ export default {
             span: 14,
         };
 
-        
+
 
         const lectures = ref([]);
         const loading = ref(true);
@@ -114,6 +118,7 @@ export default {
 
         const fetchLectures = async () => {
             try {
+                const hide = message.loading('fetching lectures', 0);
                 const response = await axios.get(`${process.env.VUE_APP_API_BASE_URL}/api/manage-leclinks`);
                 const { data } = response;
                 lectures.value = data.map(lecture => ({
@@ -125,6 +130,8 @@ export default {
                     imageUrl: "https://cdn.builder.io/api/v1/image/assets/TEMP/0256debb5de7c2fef6964f587a8f67a13485ecfc7e246d0612a25695f746b8b3?apiKey=82f83280471648fbb704a7686cae1d7e",
                     link: lecture.link,
                 }));
+                hide();
+
             } catch (error) {
                 console.error('Error fetching lectures:', error.message);
                 toast.error('An error occurred while fetching lectures. Please try again later.');
@@ -134,6 +141,7 @@ export default {
         };
 
         const updateLecture = async () => {
+            const hide = message.loading('updating',0);
             const date = new Date();
             const requestData = {
                 ...toRaw(lectureFormState),
@@ -156,10 +164,13 @@ export default {
                 } else {
                     throw new Error(`Unexpected status code: ${response.status}`);
                 }
+            
             } catch (error) {
                 console.error('There has been a problem with your fetch operation:', error);
                 toast.error('An error occurred.');
+                
             }
+            hide();
         };
 
         fetchLectures(); // Fetch lectures when the component is created
