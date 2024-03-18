@@ -4,7 +4,7 @@
       <NewNotices class="w-full max-w-screen-lg" />
       <lecNotes class="w-full max-w-screen-lg" />
     </div>
-    <AppFooter />
+    <!-- <AppFooter /> -->
   </template>
   
   <script>
@@ -12,7 +12,7 @@
   import AppHeader from '@/components/Header.vue';
   import NewNotices from '@/components/new-notices.vue';
   import lecNotes from '@/components/lec-notes.vue';
-  import AppFooter from '@/components/Footer.vue';
+  // import AppFooter from '@/components/Footer.vue';
   
   export default {
     name: 'HomePage',
@@ -20,7 +20,7 @@
       AppHeader,
       NewNotices,
       lecNotes,
-      AppFooter,
+      // AppFooter,
     },
     data() {
       return {

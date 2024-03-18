@@ -11,7 +11,8 @@
       </div>
       <div class="text-gray-900 font-bold text-2xl self-start mt-4">IT/SE: Information Technology</div>
       <div class="text-gray-900 font-bold text-lg self-start mt-2 scheduled-lec">Scheduled Lectures</div>
-      <div v-if="loading">Loading notices...</div>
+      <!-- <div v-if="loading">Loading notices...</div> -->
+      <a-skeleton v-if="loading" avtive />
       <div v-for="lecture in lectures" :key="lecture.id" class="flex items-start justify-between w-full max-w-5xl gap-4 p-4">
         <div class="flex items-start gap-4">
           <div class="w-12 h-12">

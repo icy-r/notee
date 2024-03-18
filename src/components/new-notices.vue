@@ -1,7 +1,7 @@
 <template>
   <div class="px-12">
      <h3 class="text-center font-bold underline">New notices</h3>
-     <!-- <div v-if="loading" class="text-center">Loading notices...</div> -->
+     <a-skeleton v-if="loading" avtive />
      <div v-if="error">{{ error }}</div>
      <div v-else class="scrollable-div">
        <div v-for="(notice, index) in limitedNotices" :key="index"
